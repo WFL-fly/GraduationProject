@@ -13,3 +13,4 @@ class MypjtItem(scrapy.Item):
       translation_price=scrapy.Field()
       release_date=scrapy.Field()
       release_time=scrapy.Field()
+      list_item=scrapy.Field()

@@ -20,20 +20,9 @@ class MypjtPipeline(object):
         self.ws=self.wb.active
     def process_item(self,item,spider):
         print('write excel')
-        line=[item['name'], item['price_of_purchasing_spot_exchange'], item["price_of_purchasing_foreign_cash"], item["price_of_selling_spot_exchange"], item["price_of_selling_foreign_cash"], item["translation_price"], item["release_date"], item['release_time']]
-        print(line)
-        self.ws.append(line)
-        #print('save data')
-        #ws=self.file.active
-        #row_len=len(list(ws.rows))
-        #ws.cell(row=row_len,column=1) =item["currency_name"]
-        #ws.cell(row=row_len,column=2) =item["price_of_purchasing_spot_exchange"]
-        #ws.cell(row=row_len,column=3) =item["price_of_purchasing_foreign_cash"]
-        #ws.cell(row=row_len,column=4) =item["price_of_selling_spot_exchange"]
-        #ws.cell(row=row_len,column=5) =item["price_of_selling_foreign_cash"]
-        #ws.cell(row=row_len,column=6) =item["translation_price"]
-        #ws.cell(row=row_len,column=7) =item["release_date"]
-        #ws.cell(row=row_len,column=8) =item["release_time"]    
+        for line in item['list_item']:
+            self.ws.append(line)
+        
     def close_spider(self,spider):
         print('close excel')
         self.wb.save("date.xlsx")
