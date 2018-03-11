@@ -16,7 +16,7 @@ from mypjt.items  import MypjtItem
 class MypjtPipeline(object):
     def __init__(self):
         print('open excel')
-        self.wb=load_workbook("G:\\ProgramsCode\\GitHub\\GraduationProject\\ScrapyCode\\GraduationProject\\mypjt\\mypjt\\date.xlsx")
+        self.wb=load_workbook("date.xlsx")#G:\\ProgramsCode\\GitHub\\GraduationProject\\ScrapyCode\\GraduationProject\\mypjt\\mypjt\\
         self.ws=self.wb.active
     def process_item(self,item,spider):
         print('write excel')
