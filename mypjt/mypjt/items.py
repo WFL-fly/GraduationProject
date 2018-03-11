@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# Define here the models for your scraped items
-#
-# See documentation in:
+
 # https://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
-
-
 class MypjtItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+      currency_name=scrapy.Field()
+
+      price_of_purchasing_spot_exchange=scrapy.Field()
+      price_of_purchasing_foreign_cash=scrapy.Field()
+      price_of_selling _spot_exchange=scrapy.Field()
+      price_of_selling_foreign_cash=scrapy.Field()
+      middle_price=scrapy.Field()
+      release_date=scrapy.Field()
+      release_time=scrapy.Field()
