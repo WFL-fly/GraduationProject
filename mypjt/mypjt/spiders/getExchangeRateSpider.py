@@ -19,13 +19,25 @@ class GetexchangeratespiderSpider(scrapy.Spider):
     start_urls = ['http://www.boc.cn/sourcedb/whpj/']
 
     def parse(self, response):
+        print('提取数据')
         item=MypjtItem()
-        item['list_item']=[]
+        item['data_list']=[]
+        #得到网页标题
+        res=response.xpath('/html/head/title/text()').extract()
+        if len(res)<=0:
+           item['name']='XXXX'
+        else:
+           item['name']=res[0]
+        #得到table
         res=response.xpath('//table[@align="left"]//tr').extract()#可以使用
+        #得到表头
+        item['top_list']=Selector(text=res[0]).xpath('//th/text()').extract()
+        print(item['top_list'])
+        #得到货币汇率数据
         for index in range(1,len(res)):
             res2=Selector(text=res[index]).xpath('//td').extract()
             group_Res=getGroupData(res2)
-            item['list_item'].append(group_Res)
+            item['data_list'].append(group_Res)
         yield item
 
 
