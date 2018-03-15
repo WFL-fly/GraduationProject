@@ -15,3 +15,4 @@ class MypjtItem(scrapy.Item):
       release_time=scrapy.Field()
       data_list=scrapy.Field()
       top_list=scrapy.Field()
+      currentPageIndex=scrapy.Field()

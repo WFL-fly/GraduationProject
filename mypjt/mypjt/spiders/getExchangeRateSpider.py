@@ -4,6 +4,7 @@ import os
 import sys
 import logging
 from scrapy.selector import Selector
+from scrapy.http import Request
 from mypjt.items  import MypjtItem
 import time,datetime
 def getGroupData(List_item):
@@ -23,6 +24,7 @@ class GetexchangeratespiderSpider(scrapy.Spider):
     start_urls = ['http://www.boc.cn/sourcedb/whpj/']
     
     def __init__(self):
+        self.currentPageIndex=0
         super(GetexchangeratespiderSpider,self).__init__()
         self.allPagesNum=None
         self.logger.info('init  %s log' % self.name)
@@ -61,9 +63,17 @@ class GetexchangeratespiderSpider(scrapy.Spider):
             res2=Selector(text=res[index]).xpath('//td').extract()
             group_Res=getGroupData(res2)
             item['data_list'].append(group_Res)
+        self.currentPageIndex+=1
+        item['currentPageIndex']=self.currentPageIndex
+        self.logger.info(self.currentPageIndex)
         yield item
-
-
+        
+        #爬取后面的网页数据
+        if self.currentPageIndex<self.allPagesNum:
+           new_url='http://www.boc.cn/sourcedb/whpj/index_{0}.html'.format(self.currentPageIndex)
+           self.logger.info(new_url)
+           yield Request(new_url,callback=self.parse)
+        
 '''
 def parse(self, response):
         item=MypjtItem()

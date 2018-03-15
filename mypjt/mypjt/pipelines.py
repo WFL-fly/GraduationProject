@@ -17,7 +17,7 @@ from mypjt.items  import MypjtItem
 logger=logging.getLogger('MypjtPipeline.py')
 #判断sheet是否存在表头，如果不存在就创建
 def sheet_is_exsit_top(ws,top_list):
-    if len(tuple(ws.columns))<=0:
+    if len(tuple(ws.rows))<=0:
         ws.append(top_list)
 #在工作表中查找sheet,如果没找到就创建他 create_index<0,添加到末尾
 def find_wb_sheet(wb,sheet_name,create_index):
@@ -85,16 +85,17 @@ class MypjtPipeline(object):
            self.Data_wb=Workbook()
            #self.Data_wb.remove_sheet(self.Data_wb.get_sheet_by_name('Sheet1'))
     def process_item(self,item,spider):
-        self.init_excel_table(item['name'])
+        logger.info('save currentPageIndex: '+str(item['currentPageIndex']))
+        if self.Data_wb==None:
+           self.init_excel_table(item['name'])
         logger.info('write excel')
         top_list2=item['top_list'][1:len(item['top_list'])]
-        logger.info("find sheet 0")
         allData_ws=find_wb_sheet(self.Data_wb,'allData_sheet',0)
         sheet_is_exsit_top(allData_ws,item['top_list'])
         for line in item['data_list']:
             #向总数据sheet中添加数据
             allData_ws.append(line)
-            
+            #print('excel row num: '+str(len(tuple(allData_ws.rows))))
             ws=find_wb_sheet(self.Data_wb,line[0],-1)
             sheet_is_exsit_top(ws,top_list2)
             ws.append(line[1:len(line)])
