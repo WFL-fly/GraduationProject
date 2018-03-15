@@ -8,7 +8,11 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-
+import scrapy
+import os
+import sys
+import logging
+logger=logging.getLogger('settings.py')
 BOT_NAME = 'mypjt'
 
 SPIDER_MODULES = ['mypjt.spiders']
@@ -88,3 +92,21 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+FilePath=os.path.join(os.path.abspath('.'),'logfile')
+if not os.path.exists(FilePath):
+    print ("directory %s no exists， create new directory" % FilePath)
+    os.mkdir(FilePath)
+LOG_FILE=os.path.join(FilePath,'logfile.log')
+LOG_ENABLED=True
+LOG_ENCODING='utf-8'
+LOG_STDOUT=False
+LOG_LEVEL='DEBUG'
+logmsg='''LOG_ENABLED={0} ,
+LOG_ENCODING={1},
+LOG_STDOUT={2}
+LOG_FILE={3}
+LOG_LEVEL={4}
+'''.format(LOG_ENABLED,LOG_ENCODING,LOG_STDOUT,LOG_FILE,LOG_LEVEL)
+logger.info(logmsg)
+logger.info('init log setting')

@@ -5,6 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import scrapy
+import logging
 import os
 import sys
 import openpyxl
@@ -13,6 +14,7 @@ from openpyxl import workbook
 from openpyxl import Workbook
 from openpyxl import load_workbook
 from mypjt.items  import MypjtItem
+logger=logging.getLogger('MypjtPipeline.py')
 #判断sheet是否存在表头，如果不存在就创建
 def sheet_is_exsit_top(ws,top_list):
     if len(tuple(ws.columns))<=0:
@@ -20,6 +22,7 @@ def sheet_is_exsit_top(ws,top_list):
 #在工作表中查找sheet,如果没找到就创建他 create_index<0,添加到末尾
 def find_wb_sheet(wb,sheet_name,create_index):
     sheet_name_list=wb.get_sheet_names()
+    #sheet_name_list=wb.get_sheet_names
     res=compareListEle(sheet_name_list,sheet_name)
     if not res:
        if create_index<0:
@@ -30,7 +33,8 @@ def find_wb_sheet(wb,sheet_name,create_index):
           ws = wb.active
           ws.title=sheet_name
     else:
-        ws=wb.get_sheet_by_name(sheet_name)
+        #ws=wb.get_sheet_by_name(sheet_name)
+        ws=wb[sheet_name]
     return ws    
 
 def compareListEle(list,item):
@@ -67,7 +71,7 @@ class MypjtPipeline(object):
            self.allData_wb=Workbook()
         '''
     def init_excel_table(self,excel_name):
-        print('init excel')
+        logger.info('init excel')
         current_abspath=os.path.abspath('.')
         dataFilePath=os.path.join(current_abspath,'dataFiles')
         if not os.path.exists(dataFilePath):
@@ -82,9 +86,9 @@ class MypjtPipeline(object):
            #self.Data_wb.remove_sheet(self.Data_wb.get_sheet_by_name('Sheet1'))
     def process_item(self,item,spider):
         self.init_excel_table(item['name'])
-        print('write excel')
+        logger.info('write excel')
         top_list2=item['top_list'][1:len(item['top_list'])]
-        print("find sheet 0")
+        logger.info("find sheet 0")
         allData_ws=find_wb_sheet(self.Data_wb,'allData_sheet',0)
         sheet_is_exsit_top(allData_ws,item['top_list'])
         for line in item['data_list']:
@@ -110,10 +114,10 @@ class MypjtPipeline(object):
             wb.save(filepath)
             '''
     def close_spider(self,spider):
-        print('close excel')#日志
+        logger.info('close excel')#日志
         if self.Data_wb!=None:
            self.Data_wb.save(self.excelFilePath)
         else:
-           print('Error: self.Data_wb is None ')
+           logger.error('save excel fuail,self.Data_wb is None ')
 
     
