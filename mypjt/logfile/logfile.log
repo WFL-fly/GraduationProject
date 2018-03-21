@@ -1,0 +1,1242 @@
+2018-03-21 13:11:37 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-21 13:11:37 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Windows-10-10.0.15063-SP0
+2018-03-21 13:11:37 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': 'G:\\ProgramsCode\\GitHub\\GraduationProject\\ScrapyCode\\GraduationProject\\mypjt\\logfile\\logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-21 13:11:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-21 13:11:37 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: init  getExchangeRateSpider log
+2018-03-21 13:11:37 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: init log sucessful
+2018-03-21 13:11:38 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO:  table all_currency_tb exist
+2018-03-21 13:11:38 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: table CNY_tb exist
+2018-03-21 13:11:38 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO:  insert CNY record to table all_currency_tb sucessful
+2018-03-21 13:11:38 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-21 13:11:38 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-21 13:11:38 [MypjtPipeline.py] INFO: init mysql connect
+2018-03-21 13:11:38 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-21 13:11:38 [scrapy.core.engine] INFO: Spider opened
+2018-03-21 13:11:38 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-21 13:11:38 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-21 13:11:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/> (referer: None)
+2018-03-21 13:11:39 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:11:39 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 获取总页数成功
+2018-03-21 13:11:39 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 1
+2018-03-21 13:11:39 [MypjtPipeline.py] INFO: update CNY update_time sucessful
+2018-03-21 13:11:39 [MypjtPipeline.py] INFO: init excel
+2018-03-21 13:11:39 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:11:39 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:39 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:39 [MypjtPipeline.py] INFO: in CNY_tb , insert AED and CNY_AED_tb  record sucessful
+2018-03-21 13:11:39 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:39 [MypjtPipeline.py] INFO: in CNY_tb , insert AUD and CNY_AUD_tb  record sucessful
+2018-03-21 13:11:39 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:40 [MypjtPipeline.py] INFO: in CNY_tb , insert BRL and CNY_BRL_tb  record sucessful
+2018-03-21 13:11:40 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:40 [MypjtPipeline.py] INFO: in CNY_tb , insert CAD and CNY_CAD_tb  record sucessful
+2018-03-21 13:11:40 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:40 [MypjtPipeline.py] INFO: in CNY_tb , insert CHF and CNY_CHF_tb  record sucessful
+2018-03-21 13:11:40 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:40 [MypjtPipeline.py] INFO: in CNY_tb , insert DKK and CNY_DKK_tb  record sucessful
+2018-03-21 13:11:40 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:41 [MypjtPipeline.py] INFO: in CNY_tb , insert EUR and CNY_EUR_tb  record sucessful
+2018-03-21 13:11:41 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:41 [MypjtPipeline.py] INFO: in CNY_tb , insert GBP and CNY_GBP_tb  record sucessful
+2018-03-21 13:11:41 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:41 [MypjtPipeline.py] INFO: in CNY_tb , insert HKD and CNY_HKD_tb  record sucessful
+2018-03-21 13:11:41 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:41 [MypjtPipeline.py] INFO: in CNY_tb , insert IDR and CNY_IDR_tb  record sucessful
+2018-03-21 13:11:41 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:42 [MypjtPipeline.py] INFO: in CNY_tb , insert INR and CNY_INR_tb  record sucessful
+2018-03-21 13:11:42 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:42 [MypjtPipeline.py] INFO: in CNY_tb , insert JPY and CNY_JPY_tb  record sucessful
+2018-03-21 13:11:42 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:42 [MypjtPipeline.py] INFO: in CNY_tb , insert KRW and CNY_KRW_tb  record sucessful
+2018-03-21 13:11:42 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:43 [MypjtPipeline.py] INFO: in CNY_tb , insert MOP and CNY_MOP_tb  record sucessful
+2018-03-21 13:11:43 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:43 [MypjtPipeline.py] INFO: in CNY_tb , insert MYR and CNY_MYR_tb  record sucessful
+2018-03-21 13:11:43 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:44 [MypjtPipeline.py] INFO: in CNY_tb , insert NOK and CNY_NOK_tb  record sucessful
+2018-03-21 13:11:44 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:44 [MypjtPipeline.py] INFO: in CNY_tb , insert NZD and CNY_NZD_tb  record sucessful
+2018-03-21 13:11:44 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:44 [MypjtPipeline.py] INFO: in CNY_tb , insert PHP and CNY_PHP_tb  record sucessful
+2018-03-21 13:11:44 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:44 [MypjtPipeline.py] INFO: in CNY_tb , insert RUB and CNY_RUB_tb  record sucessful
+2018-03-21 13:11:44 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:45 [MypjtPipeline.py] INFO: in CNY_tb , insert SAR and CNY_SAR_tb  record sucessful
+2018-03-21 13:11:45 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:45 [MypjtPipeline.py] INFO: in CNY_tb , insert SEK and CNY_SEK_tb  record sucessful
+2018-03-21 13:11:45 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:45 [MypjtPipeline.py] INFO: in CNY_tb , insert SGD and CNY_SGD_tb  record sucessful
+2018-03-21 13:11:45 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:46 [MypjtPipeline.py] INFO: in CNY_tb , insert THB and CNY_THB_tb  record sucessful
+2018-03-21 13:11:46 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:46 [MypjtPipeline.py] INFO: in CNY_tb , insert TRY and CNY_TRY_tb  record sucessful
+2018-03-21 13:11:46 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:46 [MypjtPipeline.py] INFO: in CNY_tb , insert TWD and CNY_TWD_tb  record sucessful
+2018-03-21 13:11:46 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:47 [MypjtPipeline.py] INFO: in CNY_tb , insert USD and CNY_USD_tb  record sucessful
+2018-03-21 13:11:47 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:47 [MypjtPipeline.py] INFO: in CNY_tb , insert ZAR and CNY_ZAR_tb  record sucessful
+2018-03-21 13:11:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/>
+None
+2018-03-21 13:11:47 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_1.html
+2018-03-21 13:11:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_1.html> (referer: http://www.boc.cn/sourcedb/whpj/)
+2018-03-21 13:11:47 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:11:47 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 2
+2018-03-21 13:11:47 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:11:47 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:47 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:47 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:11:47 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:47 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:11:47 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:48 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:11:48 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:48 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:11:48 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:48 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:11:48 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:48 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:11:48 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:48 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:11:48 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:49 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:11:49 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:49 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:11:49 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:49 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:11:49 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:49 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:11:49 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:49 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:11:49 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:50 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:11:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:50 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:11:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:50 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:11:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:50 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:11:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:50 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:11:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:51 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:11:51 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:51 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:11:51 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:51 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:11:51 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:51 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:11:51 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:51 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:11:51 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:52 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:11:52 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:52 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:11:52 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:52 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:11:52 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:52 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:11:52 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:52 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:11:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_1.html>
+None
+2018-03-21 13:11:52 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_2.html
+2018-03-21 13:11:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_2.html> (referer: http://www.boc.cn/sourcedb/whpj/index_1.html)
+2018-03-21 13:11:53 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:11:53 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 3
+2018-03-21 13:11:53 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:11:53 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:53 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:53 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:11:53 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:53 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:11:53 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:53 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:11:53 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:53 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:11:53 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:54 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:11:54 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:54 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:11:54 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:54 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:11:54 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:54 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:11:54 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:55 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:11:55 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:55 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:11:55 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:55 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:11:55 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:55 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:11:55 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:56 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:11:56 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:56 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:11:56 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:56 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:11:56 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:56 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:11:56 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:56 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:11:56 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:57 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:11:57 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:57 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:11:57 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:57 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:11:57 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:58 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:11:58 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:58 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:11:58 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:58 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:11:58 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:58 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:11:58 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:59 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:11:59 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:59 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:11:59 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:11:59 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:11:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_2.html>
+None
+2018-03-21 13:11:59 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_3.html
+2018-03-21 13:11:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_3.html> (referer: http://www.boc.cn/sourcedb/whpj/index_2.html)
+2018-03-21 13:12:00 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:12:00 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 4
+2018-03-21 13:12:00 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:12:00 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:00 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:00 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:12:00 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:00 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:12:00 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:00 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:12:00 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:00 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:12:00 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:01 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:12:01 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:01 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:12:01 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:01 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:12:01 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:01 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:12:01 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:01 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:12:01 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:01 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:12:01 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:02 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:12:02 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:02 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:12:02 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:02 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:12:02 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:03 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:12:03 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:03 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:12:03 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:04 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:12:04 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:04 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:12:04 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:04 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:12:04 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:04 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:12:04 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:04 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:12:04 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:04 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:12:04 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:05 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:12:05 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:05 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:12:05 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:05 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:12:05 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:05 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:12:05 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:05 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:12:05 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:06 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:12:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_3.html>
+None
+2018-03-21 13:12:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_4.html
+2018-03-21 13:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_4.html> (referer: http://www.boc.cn/sourcedb/whpj/index_3.html)
+2018-03-21 13:12:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:12:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 5
+2018-03-21 13:12:06 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:12:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:06 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:12:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:06 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:12:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:06 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:12:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:07 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:12:07 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:07 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:12:07 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:07 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:12:07 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:07 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:12:07 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:07 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:12:07 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:08 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:12:08 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:08 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:12:08 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:08 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:12:08 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:08 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:12:08 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:08 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:12:08 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:09 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:12:09 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:09 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:12:09 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:09 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:12:09 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:09 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:12:09 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:09 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:12:09 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:09 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:12:09 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:10 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:12:10 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:10 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:12:10 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:10 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:12:10 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:10 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:12:10 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:10 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:12:10 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:11 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:12:11 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:11 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:12:11 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:11 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:12:11 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_4.html>
+None
+2018-03-21 13:12:11 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_5.html
+2018-03-21 13:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_5.html> (referer: http://www.boc.cn/sourcedb/whpj/index_4.html)
+2018-03-21 13:12:11 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:12:11 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 6
+2018-03-21 13:12:11 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:12:11 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:11 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:11 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:12:11 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:12 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:12:12 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:12 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:12:12 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:12 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:12:12 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:12 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:12:12 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:12 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:12:12 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:12 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:12:12 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:13 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:12:13 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:13 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:12:13 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:13 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:12:13 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:13 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:12:13 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:13 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:12:13 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:14 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:12:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:14 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:12:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:14 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:12:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:14 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:12:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:14 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:12:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:15 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:12:15 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:15 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:12:15 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:15 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:12:15 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:15 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:12:15 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:15 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:12:15 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:15 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:12:15 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:16 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:12:16 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:16 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:12:16 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:16 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:12:16 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:16 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:12:16 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_5.html>
+None
+2018-03-21 13:12:16 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_6.html
+2018-03-21 13:12:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_6.html> (referer: http://www.boc.cn/sourcedb/whpj/index_5.html)
+2018-03-21 13:12:16 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:12:16 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 7
+2018-03-21 13:12:16 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:12:16 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:16 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:17 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:12:17 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:17 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:12:17 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:17 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:12:17 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:17 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:12:17 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:17 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:12:17 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:17 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:12:17 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:18 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:12:18 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:18 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:12:18 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:18 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:12:18 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:18 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:12:18 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:18 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:12:18 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:19 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:12:19 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:19 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:12:19 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:19 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:12:19 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:19 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:12:19 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:19 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:12:19 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:20 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:12:20 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:20 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:12:20 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:20 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:12:20 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:20 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:12:20 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:20 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:12:20 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:20 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:12:20 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:21 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:12:21 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:21 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:12:21 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:21 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:12:21 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:21 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:12:21 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:21 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:12:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_6.html>
+None
+2018-03-21 13:12:21 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_7.html
+2018-03-21 13:12:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_7.html> (referer: http://www.boc.cn/sourcedb/whpj/index_6.html)
+2018-03-21 13:12:22 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:12:22 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 8
+2018-03-21 13:12:22 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:12:22 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:22 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:22 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:12:22 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:22 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:12:22 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:22 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:12:22 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:22 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:12:22 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:23 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:12:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:23 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:12:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:23 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:12:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:23 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:12:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:23 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:12:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:24 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:12:24 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:24 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:12:24 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:24 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:12:24 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:24 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:12:24 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:24 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:12:24 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:25 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:12:25 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:25 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:12:25 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:25 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:12:25 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:25 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:12:25 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:25 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:12:25 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:25 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:12:25 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:26 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:12:26 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:26 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:12:26 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:26 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:12:26 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:26 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:12:26 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:27 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:12:27 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:27 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:12:27 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:27 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:12:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_7.html>
+None
+2018-03-21 13:12:27 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_8.html
+2018-03-21 13:12:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_8.html> (referer: http://www.boc.cn/sourcedb/whpj/index_7.html)
+2018-03-21 13:12:27 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:12:27 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 9
+2018-03-21 13:12:27 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:12:27 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:27 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:27 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:12:27 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:27 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:12:27 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:28 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:12:28 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:28 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:12:28 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:28 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:12:28 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:28 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:12:28 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:28 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:12:28 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:29 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:12:29 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:29 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:12:29 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:29 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:12:29 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:29 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:12:29 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:29 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:12:29 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:30 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:12:30 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:30 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:12:30 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:30 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:12:30 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:30 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:12:30 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:30 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:12:30 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:31 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:12:31 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:31 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:12:31 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:31 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:12:31 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:31 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:12:31 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:31 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:12:31 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:32 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:12:32 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:32 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:12:32 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:32 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:12:32 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:32 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:12:32 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:32 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:12:32 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_8.html>
+None
+2018-03-21 13:12:32 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: http://www.boc.cn/sourcedb/whpj/index_9.html
+2018-03-21 13:12:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_9.html> (referer: http://www.boc.cn/sourcedb/whpj/index_8.html)
+2018-03-21 13:12:33 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 提取数据
+2018-03-21 13:12:33 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\getExchangeRateSpider.py] INFO: 10
+2018-03-21 13:12:33 [MypjtPipeline.py] INFO: write excel
+2018-03-21 13:12:33 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:33 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:33 [MypjtPipeline.py] INFO: in CNY_tb ,AED and CNY_AED_tb  record exists
+2018-03-21 13:12:33 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:33 [MypjtPipeline.py] INFO: in CNY_tb ,AUD and CNY_AUD_tb  record exists
+2018-03-21 13:12:33 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:33 [MypjtPipeline.py] INFO: in CNY_tb ,BRL and CNY_BRL_tb  record exists
+2018-03-21 13:12:33 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:33 [MypjtPipeline.py] INFO: in CNY_tb ,CAD and CNY_CAD_tb  record exists
+2018-03-21 13:12:33 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:33 [MypjtPipeline.py] INFO: in CNY_tb ,CHF and CNY_CHF_tb  record exists
+2018-03-21 13:12:33 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:34 [MypjtPipeline.py] INFO: in CNY_tb ,DKK and CNY_DKK_tb  record exists
+2018-03-21 13:12:34 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:34 [MypjtPipeline.py] INFO: in CNY_tb ,EUR and CNY_EUR_tb  record exists
+2018-03-21 13:12:34 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:34 [MypjtPipeline.py] INFO: in CNY_tb ,GBP and CNY_GBP_tb  record exists
+2018-03-21 13:12:34 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:34 [MypjtPipeline.py] INFO: in CNY_tb ,HKD and CNY_HKD_tb  record exists
+2018-03-21 13:12:34 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:34 [MypjtPipeline.py] INFO: in CNY_tb ,IDR and CNY_IDR_tb  record exists
+2018-03-21 13:12:34 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:35 [MypjtPipeline.py] INFO: in CNY_tb ,INR and CNY_INR_tb  record exists
+2018-03-21 13:12:35 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:35 [MypjtPipeline.py] INFO: in CNY_tb ,JPY and CNY_JPY_tb  record exists
+2018-03-21 13:12:35 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:35 [MypjtPipeline.py] INFO: in CNY_tb ,KRW and CNY_KRW_tb  record exists
+2018-03-21 13:12:35 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:35 [MypjtPipeline.py] INFO: in CNY_tb ,MOP and CNY_MOP_tb  record exists
+2018-03-21 13:12:35 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:35 [MypjtPipeline.py] INFO: in CNY_tb ,MYR and CNY_MYR_tb  record exists
+2018-03-21 13:12:35 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:36 [MypjtPipeline.py] INFO: in CNY_tb ,NOK and CNY_NOK_tb  record exists
+2018-03-21 13:12:36 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:36 [MypjtPipeline.py] INFO: in CNY_tb ,NZD and CNY_NZD_tb  record exists
+2018-03-21 13:12:36 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:36 [MypjtPipeline.py] INFO: in CNY_tb ,PHP and CNY_PHP_tb  record exists
+2018-03-21 13:12:36 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:36 [MypjtPipeline.py] INFO: in CNY_tb ,RUB and CNY_RUB_tb  record exists
+2018-03-21 13:12:36 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:36 [MypjtPipeline.py] INFO: in CNY_tb ,SAR and CNY_SAR_tb  record exists
+2018-03-21 13:12:36 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:37 [MypjtPipeline.py] INFO: in CNY_tb ,SEK and CNY_SEK_tb  record exists
+2018-03-21 13:12:37 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:37 [MypjtPipeline.py] INFO: in CNY_tb ,SGD and CNY_SGD_tb  record exists
+2018-03-21 13:12:37 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:37 [MypjtPipeline.py] INFO: in CNY_tb ,THB and CNY_THB_tb  record exists
+2018-03-21 13:12:37 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:37 [MypjtPipeline.py] INFO: in CNY_tb ,TRY and CNY_TRY_tb  record exists
+2018-03-21 13:12:37 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:37 [MypjtPipeline.py] INFO: in CNY_tb ,TWD and CNY_TWD_tb  record exists
+2018-03-21 13:12:37 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:37 [MypjtPipeline.py] INFO: in CNY_tb ,USD and CNY_USD_tb  record exists
+2018-03-21 13:12:37 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:37: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-21 13:12:38 [MypjtPipeline.py] INFO: in CNY_tb ,ZAR and CNY_ZAR_tb  record exists
+2018-03-21 13:12:38 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_9.html>
+None
+2018-03-21 13:12:38 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-21 13:12:38 [MypjtPipeline.py] INFO: close excel
+2018-03-21 13:12:38 [MypjtPipeline.py] INFO: close mysql connect
+2018-03-21 13:12:38 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2821,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 46131,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 21, 5, 12, 38, 342443),
+ 'item_scraped_count': 10,
+ 'log_count/DEBUG': 21,
+ 'log_count/INFO': 327,
+ 'log_count/WARNING': 280,
+ 'request_depth_max': 9,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2018, 3, 21, 5, 11, 38, 789115)}
+2018-03-21 13:12:38 [scrapy.core.engine] INFO: Spider closed (finished)
