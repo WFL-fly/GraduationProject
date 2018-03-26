@@ -1,14 +1,16 @@
-2018-03-25 22:25:19 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
-2018-03-25 22:25:19 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Windows-10-10.0.15063-SP0
-2018-03-25 22:25:19 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': 'G:\\ProgramsCode\\GitHub\\GraduationProject\\ScrapyCode\\GraduationProject\\mypjt\\logfile\\logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
-2018-03-25 22:25:20 [scrapy.middleware] INFO: Enabled extensions:
+2018-03-26 22:54:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-26 22:54:03 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Windows-10-10.0.15063-SP0
+2018-03-26 22:54:03 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': 'G:\\ProgramsCode\\GitHub\\GraduationProject\\ScrapyCode\\GraduationProject\\mypjt\\logfile\\logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-26 22:54:03 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.logstats.LogStats']
-2018-03-25 22:25:20 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1
-2018-03-25 22:25:20 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO:  table all_currency_tb exist
-2018-03-25 22:25:20 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO: table JPY_tb exist
-2018-03-25 22:25:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2018-03-26 22:54:03 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: init  CNY log
+2018-03-26 22:54:03 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: init log sucessful
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO:  table all_currency_tb exist
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO: table CNY_tb exist
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO:  insert CNY record to table all_currency_tb sucessful
+2018-03-26 22:54:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -20,458 +22,170 @@
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-25 22:25:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+2018-03-26 22:54:04 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-25 22:25:20 [MypjtPipeline.py] INFO: init mysql connect
-2018-03-25 22:25:20 [scrapy.middleware] INFO: Enabled item pipelines:
+2018-03-26 22:54:04 [scrapy.middleware] INFO: Enabled item pipelines:
 ['mypjt.pipelines.MypjtPipeline']
-2018-03-25 22:25:20 [scrapy.core.engine] INFO: Spider opened
-2018-03-25 22:25:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-25 22:25:20 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
-2018-03-25 22:25:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1> (referer: None)
-2018-03-25 22:25:21 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to CNY exchange rate
-2018-03-25 22:25:21 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1
-2018-03-25 22:25:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1)
-2018-03-25 22:25:21 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to USD exchange rate
-2018-03-25 22:25:21 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1
-2018-03-25 22:25:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1)
-2018-03-25 22:25:22 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to GBP exchange rate
-2018-03-25 22:25:22 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1
-2018-03-25 22:25:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1)
-2018-03-25 22:25:22 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to EUR exchange rate
-2018-03-25 22:25:22 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1
-2018-03-25 22:25:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1)
-2018-03-25 22:25:23 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to RUB exchange rate
-2018-03-25 22:25:23 [MypjtPipeline.py] INFO: init excel
-2018-03-25 22:25:23 [MypjtPipeline.py] INFO: write excel
-2018-03-25 22:25:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+2018-03-26 22:54:04 [scrapy.core.engine] INFO: Spider opened
+2018-03-26 22:54:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-26 22:54:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-26 22:54:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/> (referer: None)
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 获取总页数成功10
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 1
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_1.html
+2018-03-26 22:54:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_1.html> (referer: http://www.boc.cn/sourcedb/whpj/)
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 2
+2018-03-26 22:54:04 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_2.html
+2018-03-26 22:54:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_2.html> (referer: http://www.boc.cn/sourcedb/whpj/index_1.html)
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 3
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_3.html
+2018-03-26 22:54:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_3.html> (referer: http://www.boc.cn/sourcedb/whpj/index_2.html)
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 4
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_4.html
+2018-03-26 22:54:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_4.html> (referer: http://www.boc.cn/sourcedb/whpj/index_3.html)
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 5
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_5.html
+2018-03-26 22:54:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_5.html> (referer: http://www.boc.cn/sourcedb/whpj/index_4.html)
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 6
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_6.html
+2018-03-26 22:54:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_6.html> (referer: http://www.boc.cn/sourcedb/whpj/index_5.html)
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 7
+2018-03-26 22:54:05 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_7.html
+2018-03-26 22:54:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_7.html> (referer: http://www.boc.cn/sourcedb/whpj/index_6.html)
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 8
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_8.html
+2018-03-26 22:54:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_8.html> (referer: http://www.boc.cn/sourcedb/whpj/index_7.html)
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 9
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: http://www.boc.cn/sourcedb/whpj/index_9.html
+2018-03-26 22:54:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_9.html> (referer: http://www.boc.cn/sourcedb/whpj/index_8.html)
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: 提取数据
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py] INFO: init excel
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py] INFO: write excel
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
   sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
   sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
   sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
   sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
   sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
   sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [MypjtPipeline.py] INFO: write excel finish
-2018-03-25 22:25:23 [MypjtPipeline.py] INFO: update JPY update_time sucessful
-2018-03-25 22:25:23 [MypjtPipeline.py] ERROR: insert CNY to JPY_CNY_tb failure,
- error massge: Traceback (most recent call last):
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 112, in execute
-    result = self._query(query)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 230, in _query
-    conn.query(q)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 607, in query
-    self._affected_rows = self._read_query_result()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 691, in _read_query_result
-    result.read()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 869, in read
-    self.first_packet = self.connection.read_packet()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 686, in read_packet
-    packet.check_error()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 328, in check_error
-    raise_mysql_exception(self.__data)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 142, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 135, in _check_mysql_exception
-    raise errorclass(errno,errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-During handling of the above exception, another exception occurred:
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-Traceback (most recent call last):
-  File "G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py", line 140, in save_linedata_to_mysql
-    effect_row=self.cursor.execute(sql_list[1])
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 262, in execute
-    result = super(DictCursor, self).execute(query, args)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 117, in execute
-    self.errorhandler(self, exc, value)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 189, in defaulterrorhandler
-    raise errorclass(errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [MypjtPipeline.py] ERROR: insert USD to JPY_USD_tb failure,
- error massge: Traceback (most recent call last):
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 112, in execute
-    result = self._query(query)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 230, in _query
-    conn.query(q)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 607, in query
-    self._affected_rows = self._read_query_result()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 691, in _read_query_result
-    result.read()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 869, in read
-    self.first_packet = self.connection.read_packet()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 686, in read_packet
-    packet.check_error()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 328, in check_error
-    raise_mysql_exception(self.__data)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 142, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 135, in _check_mysql_exception
-    raise errorclass(errno,errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-During handling of the above exception, another exception occurred:
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-Traceback (most recent call last):
-  File "G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py", line 140, in save_linedata_to_mysql
-    effect_row=self.cursor.execute(sql_list[1])
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 262, in execute
-    result = super(DictCursor, self).execute(query, args)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 117, in execute
-    self.errorhandler(self, exc, value)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 189, in defaulterrorhandler
-    raise errorclass(errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [MypjtPipeline.py] ERROR: insert GBP to JPY_GBP_tb failure,
- error massge: Traceback (most recent call last):
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 112, in execute
-    result = self._query(query)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 230, in _query
-    conn.query(q)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 607, in query
-    self._affected_rows = self._read_query_result()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 691, in _read_query_result
-    result.read()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 869, in read
-    self.first_packet = self.connection.read_packet()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 686, in read_packet
-    packet.check_error()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 328, in check_error
-    raise_mysql_exception(self.__data)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 142, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 135, in _check_mysql_exception
-    raise errorclass(errno,errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-During handling of the above exception, another exception occurred:
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-Traceback (most recent call last):
-  File "G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py", line 140, in save_linedata_to_mysql
-    effect_row=self.cursor.execute(sql_list[1])
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 262, in execute
-    result = super(DictCursor, self).execute(query, args)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 117, in execute
-    self.errorhandler(self, exc, value)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 189, in defaulterrorhandler
-    raise errorclass(errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [MypjtPipeline.py] ERROR: insert EUR to JPY_EUR_tb failure,
- error massge: Traceback (most recent call last):
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 112, in execute
-    result = self._query(query)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 230, in _query
-    conn.query(q)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 607, in query
-    self._affected_rows = self._read_query_result()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 691, in _read_query_result
-    result.read()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 869, in read
-    self.first_packet = self.connection.read_packet()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 686, in read_packet
-    packet.check_error()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 328, in check_error
-    raise_mysql_exception(self.__data)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 142, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 135, in _check_mysql_exception
-    raise errorclass(errno,errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-During handling of the above exception, another exception occurred:
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-Traceback (most recent call last):
-  File "G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py", line 140, in save_linedata_to_mysql
-    effect_row=self.cursor.execute(sql_list[1])
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 262, in execute
-    result = super(DictCursor, self).execute(query, args)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 117, in execute
-    self.errorhandler(self, exc, value)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 189, in defaulterrorhandler
-    raise errorclass(errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [MypjtPipeline.py] ERROR: insert RUB to JPY_RUB_tb failure,
- error massge: Traceback (most recent call last):
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 112, in execute
-    result = self._query(query)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 230, in _query
-    conn.query(q)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 607, in query
-    self._affected_rows = self._read_query_result()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 691, in _read_query_result
-    result.read()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 869, in read
-    self.first_packet = self.connection.read_packet()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 686, in read_packet
-    packet.check_error()
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 328, in check_error
-    raise_mysql_exception(self.__data)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 142, in raise_mysql_exception
-    _check_mysql_exception(errinfo)
-  File "h:\program files\python36\lib\site-packages\pymysql\err.py", line 135, in _check_mysql_exception
-    raise errorclass(errno,errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-During handling of the above exception, another exception occurred:
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-Traceback (most recent call last):
-  File "G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py", line 140, in save_linedata_to_mysql
-    effect_row=self.cursor.execute(sql_list[1])
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 262, in execute
-    result = super(DictCursor, self).execute(query, args)
-  File "h:\program files\python36\lib\site-packages\pymysql\cursors.py", line 117, in execute
-    self.errorhandler(self, exc, value)
-  File "h:\program files\python36\lib\site-packages\pymysql\connections.py", line 189, in defaulterrorhandler
-    raise errorclass(errorvalue)
-pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '22:25:00)' at line 1")
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
 
-2018-03-25 22:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1>
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-26 22:54:06 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:23: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py] INFO: write excel finish
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py] INFO: close excel
+2018-03-26 22:54:06 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO: init mysql connect
+2018-03-26 22:54:07 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py] INFO: update CNY update_time sucessful
+2018-03-26 22:54:30 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py] INFO: close mysql connect
+2018-03-26 22:54:30 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_9.html>
 None
-2018-03-25 22:25:23 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY exchange rate finish
-2018-03-25 22:25:23 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-03-25 22:25:23 [MypjtPipeline.py] INFO: close excel
-2018-03-25 22:25:23 [MypjtPipeline.py] INFO: close mysql connect
-2018-03-25 22:25:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1741,
- 'downloader/request_count': 5,
- 'downloader/request_method_count/GET': 5,
- 'downloader/response_bytes': 88400,
- 'downloader/response_count': 5,
- 'downloader/response_status_count/200': 5,
+2018-03-26 22:54:30 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\CNY.py] INFO: get all pages data
+2018-03-26 22:54:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-26 22:54:30 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py] INFO: data save finish
+2018-03-26 22:54:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 2821,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 182427,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 3, 25, 14, 25, 23, 800610),
+ 'finish_time': datetime.datetime(2018, 3, 26, 14, 54, 30, 399701),
  'item_scraped_count': 1,
- 'log_count/DEBUG': 7,
- 'log_count/ERROR': 5,
- 'log_count/INFO': 27,
- 'log_count/WARNING': 6,
- 'request_depth_max': 4,
- 'response_received_count': 5,
- 'scheduler/dequeued': 5,
- 'scheduler/dequeued/memory': 5,
- 'scheduler/enqueued': 5,
- 'scheduler/enqueued/memory': 5,
- 'start_time': datetime.datetime(2018, 3, 25, 14, 25, 20, 949447)}
-2018-03-25 22:25:23 [scrapy.core.engine] INFO: Spider closed (finished)
-2018-03-25 22:28:08 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
-2018-03-25 22:28:08 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Windows-10-10.0.15063-SP0
-2018-03-25 22:28:08 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': 'G:\\ProgramsCode\\GitHub\\GraduationProject\\ScrapyCode\\GraduationProject\\mypjt\\logfile\\logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
-2018-03-25 22:28:08 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.corestats.CoreStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.logstats.LogStats']
-2018-03-25 22:28:08 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1
-2018-03-25 22:28:09 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO:  table all_currency_tb exist
-2018-03-25 22:28:09 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO: table JPY_tb exist
-2018-03-25 22:28:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-25 22:28:09 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-25 22:28:09 [MypjtPipeline.py] INFO: init mysql connect
-2018-03-25 22:28:09 [scrapy.middleware] INFO: Enabled item pipelines:
-['mypjt.pipelines.MypjtPipeline']
-2018-03-25 22:28:09 [scrapy.core.engine] INFO: Spider opened
-2018-03-25 22:28:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-25 22:28:09 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
-2018-03-25 22:28:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1> (referer: None)
-2018-03-25 22:28:12 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to CNY exchange rate
-2018-03-25 22:28:12 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1
-2018-03-25 22:28:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1)
-2018-03-25 22:28:12 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to USD exchange rate
-2018-03-25 22:28:12 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1
-2018-03-25 22:28:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1)
-2018-03-25 22:28:12 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to GBP exchange rate
-2018-03-25 22:28:12 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1
-2018-03-25 22:28:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1)
-2018-03-25 22:28:13 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to EUR exchange rate
-2018-03-25 22:28:13 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1
-2018-03-25 22:28:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1)
-2018-03-25 22:28:13 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to RUB exchange rate
-2018-03-25 22:28:13 [MypjtPipeline.py] INFO: init excel
-2018-03-25 22:28:14 [MypjtPipeline.py] INFO: write excel
-2018-03-25 22:28:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:28:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:28:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:28:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:28:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:28:14 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:28:14 [MypjtPipeline.py] INFO: write excel finish
-2018-03-25 22:28:14 [MypjtPipeline.py] INFO: update JPY update_time sucessful
-2018-03-25 22:28:14 [MypjtPipeline.py] INFO: in JPY_tb , insert CNY and JPY_CNY_tb  record sucessful
-2018-03-25 22:28:14 [MypjtPipeline.py] INFO: in JPY_tb , insert USD and JPY_USD_tb  record sucessful
-2018-03-25 22:28:14 [MypjtPipeline.py] INFO: in JPY_tb , insert GBP and JPY_GBP_tb  record sucessful
-2018-03-25 22:28:15 [MypjtPipeline.py] INFO: in JPY_tb , insert EUR and JPY_EUR_tb  record sucessful
-2018-03-25 22:28:15 [MypjtPipeline.py] INFO: in JPY_tb , insert RUB and JPY_RUB_tb  record sucessful
-2018-03-25 22:28:15 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1>
-None
-2018-03-25 22:28:15 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY exchange rate finish
-2018-03-25 22:28:15 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-03-25 22:28:15 [MypjtPipeline.py] INFO: close excel
-2018-03-25 22:28:15 [MypjtPipeline.py] INFO: close mysql connect
-2018-03-25 22:28:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1741,
- 'downloader/request_count': 5,
- 'downloader/request_method_count/GET': 5,
- 'downloader/response_bytes': 88400,
- 'downloader/response_count': 5,
- 'downloader/response_status_count/200': 5,
- 'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 3, 25, 14, 28, 15, 461606),
- 'item_scraped_count': 1,
- 'log_count/DEBUG': 7,
- 'log_count/INFO': 32,
- 'log_count/WARNING': 6,
- 'request_depth_max': 4,
- 'response_received_count': 5,
- 'scheduler/dequeued': 5,
- 'scheduler/dequeued/memory': 5,
- 'scheduler/enqueued': 5,
- 'scheduler/enqueued/memory': 5,
- 'start_time': datetime.datetime(2018, 3, 25, 14, 28, 9, 988934)}
-2018-03-25 22:28:15 [scrapy.core.engine] INFO: Spider closed (finished)
-2018-03-25 22:30:46 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
-2018-03-25 22:30:46 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:54:40) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Windows-10-10.0.15063-SP0
-2018-03-25 22:30:46 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': 'G:\\ProgramsCode\\GitHub\\GraduationProject\\ScrapyCode\\GraduationProject\\mypjt\\logfile\\logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
-2018-03-25 22:30:46 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.corestats.CoreStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.logstats.LogStats']
-2018-03-25 22:30:46 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1
-2018-03-25 22:30:46 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO:  table all_currency_tb exist
-2018-03-25 22:30:47 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\Public_Module.py] INFO: table JPY_tb exist
-2018-03-25 22:30:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-25 22:30:47 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-25 22:30:47 [MypjtPipeline.py] INFO: init mysql connect
-2018-03-25 22:30:47 [scrapy.middleware] INFO: Enabled item pipelines:
-['mypjt.pipelines.MypjtPipeline']
-2018-03-25 22:30:47 [scrapy.core.engine] INFO: Spider opened
-2018-03-25 22:30:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-25 22:30:47 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
-2018-03-25 22:30:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1> (referer: None)
-2018-03-25 22:30:48 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to CNY exchange rate
-2018-03-25 22:30:48 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1
-2018-03-25 22:30:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1)
-2018-03-25 22:30:48 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to USD exchange rate
-2018-03-25 22:30:48 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1
-2018-03-25 22:30:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1)
-2018-03-25 22:30:49 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to GBP exchange rate
-2018-03-25 22:30:49 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1
-2018-03-25 22:30:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1)
-2018-03-25 22:30:49 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to EUR exchange rate
-2018-03-25 22:30:49 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1
-2018-03-25 22:30:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1)
-2018-03-25 22:30:50 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY to RUB exchange rate
-2018-03-25 22:30:50 [MypjtPipeline.py] INFO: init excel
-2018-03-25 22:30:50 [MypjtPipeline.py] INFO: write excel
-2018-03-25 22:30:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:30:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:30:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:30:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:30:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:30:50 [py.warnings] WARNING: G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\pipelines.py:38: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
-  sheet_name_list=wb.get_sheet_names()
-
-2018-03-25 22:30:50 [MypjtPipeline.py] INFO: write excel finish
-2018-03-25 22:30:50 [MypjtPipeline.py] INFO: update JPY update_time sucessful
-2018-03-25 22:30:50 [MypjtPipeline.py] INFO: in JPY_tb ,CNY and JPY_CNY_tb  record exists
-2018-03-25 22:30:51 [MypjtPipeline.py] INFO: in JPY_tb ,USD and JPY_USD_tb  record exists
-2018-03-25 22:30:51 [MypjtPipeline.py] INFO: in JPY_tb ,GBP and JPY_GBP_tb  record exists
-2018-03-25 22:30:51 [MypjtPipeline.py] INFO: in JPY_tb ,EUR and JPY_EUR_tb  record exists
-2018-03-25 22:30:51 [MypjtPipeline.py] INFO: in JPY_tb ,RUB and JPY_RUB_tb  record exists
-2018-03-25 22:30:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1>
-None
-2018-03-25 22:30:51 [G:\ProgramsCode\GitHub\GraduationProject\ScrapyCode\GraduationProject\mypjt\mypjt\spiders\JPY_Spider.py] INFO: get from JPY exchange rate finish
-2018-03-25 22:30:51 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-03-25 22:30:51 [MypjtPipeline.py] INFO: close excel
-2018-03-25 22:30:51 [MypjtPipeline.py] INFO: close mysql connect
-2018-03-25 22:30:51 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1741,
- 'downloader/request_count': 5,
- 'downloader/request_method_count/GET': 5,
- 'downloader/response_bytes': 88400,
- 'downloader/response_count': 5,
- 'downloader/response_status_count/200': 5,
- 'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 3, 25, 14, 30, 51, 593481),
- 'item_scraped_count': 1,
- 'log_count/DEBUG': 7,
- 'log_count/INFO': 32,
- 'log_count/WARNING': 6,
- 'request_depth_max': 4,
- 'response_received_count': 5,
- 'scheduler/dequeued': 5,
- 'scheduler/dequeued/memory': 5,
- 'scheduler/enqueued': 5,
- 'scheduler/enqueued/memory': 5,
- 'start_time': datetime.datetime(2018, 3, 25, 14, 30, 47, 651007)}
-2018-03-25 22:30:51 [scrapy.core.engine] INFO: Spider closed (finished)
+ 'log_count/DEBUG': 12,
+ 'log_count/INFO': 50,
+ 'log_count/WARNING': 28,
+ 'request_depth_max': 9,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2018, 3, 26, 14, 54, 4, 551839)}
+2018-03-26 22:54:30 [scrapy.core.engine] INFO: Spider closed (finished)

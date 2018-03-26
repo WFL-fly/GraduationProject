@@ -6,7 +6,32 @@ import time,datetime
 import pymysql
 
 logger=logging.getLogger(sys._getframe().f_code.co_filename)#os.path.abspath('.')+
+# 货币 中英文缩写对照dict
+currency_translate_dict={'人民币':'CNY','阿联酋迪拉姆':'AED','澳大利亚元':'AUD', \
+'巴西里亚尔':'BRL','加拿大元':'CAD','瑞士法郎':'CHF','丹麦克朗':'DKK','欧元':'EUR', \
+'英镑':'GBP','港币':'HKD','印尼卢比':'IDR','印度卢比':'INR','日元':'JPY', \
+'韩国元':'KRW','澳门元':'MOP','林吉特':'MYR','挪威克朗':'NOK','新西兰元':'NZD', \
+'菲律宾比索':'PHP','卢布':'RUB','沙特里亚尔':'SAR','瑞典克朗':'SEK','新加坡元':'SGD', \
+'泰国铢':'THB','土耳其里拉':'TRY','新台币':'TWD','美元':'USD','南非兰特':'ZAR' \
+}
+top_dict={'货币名称':'CurrencyName','现汇买入价':'BuyingRate','现钞买入价':'CashBuyingRate', \
+'现汇卖出价':'SellingRate','现汇卖出价':'CashSellingRate','中行折算价':'MiddleRate'}
+def getGroupData(List_item):
+    temp_res=[]
+    name=List_item[0].split('/')[-1]
+    temp_res.append(name)
+    temp_res.append(List_item[1])
+    temp_res.append(List_item[2]+':00')
+    return temp_res
 
+def init_mysql(my_host,my_port,my_user,pw,dn_name,my_charset):
+        logger.info('init mysql connect')
+        try :
+            conn=pymysql.connect(host=my_host,port=my_port,user=my_user,passwd=pw,db=dn_name,charset=my_charset)
+        except Exception as e:
+            logger.error('init mysql connect failure,\n error massge: {1}'.format(childtb_name,traceback.format_exc()) )
+            conn=None
+        return conn
 def init_logFile(logFileName):
     logFilePath=os.path.join(os.path.abspath('.'),'logfile')
     if  not os.path.exists(logFilePath):
