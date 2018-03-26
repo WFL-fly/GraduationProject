@@ -7,7 +7,8 @@ from scrapy.selector import Selector
 from scrapy.http import Request
 from mypjt.items  import MypjtItem
 import time,datetime
-import pymysql
+#import pymysql
+from  mypjt.Public_Module import check_all_currency_tb
 logger=logging.getLogger(sys._getframe().f_code.co_filename)#os.path.abspath('.')+
 def getGroupData(List_item):
     temp_res=[]
@@ -26,14 +27,12 @@ def getGroupData(List_item):
     datetime +=res3[0]#datetime str
     temp_res.append(datetime)
     return temp_res
-#检查 all_currency——tb是否存在某货币，不存在则插入该货，返回值为最新更新时间
 
-class GetexchangeratespiderSpider(scrapy.Spider):
-
-    name = 'getExchangeRateSpider'
+class CnySpiderSpider(scrapy.Spider):
+    name = 'CNY_Spider'
     allowed_domains = ['www.boc.cn']
     start_urls = ['http://www.boc.cn/sourcedb/whpj/']
-    
+
     def __init__(self):
         self.datetime=None
         self.currentPageIndex=0
@@ -64,12 +63,14 @@ class GetexchangeratespiderSpider(scrapy.Spider):
             else:
                 self.allPagesNum=0
                 logger.error("获取总页数失败")
+        '''
         #得到网页标题
         res=response.xpath('/html/head/title/text()').extract()
         if  len(res)<=0:
             item['name']='XXXX'
         else:
             item['name']=res[0]
+        '''
         #得到table
         res=response.xpath('//table[@align="left"]//tr').extract()#可以使用
         #得到表头
@@ -80,13 +81,12 @@ class GetexchangeratespiderSpider(scrapy.Spider):
             group_Res=getGroupData(res2)
             item['data_list'].append(group_Res)
         #print(item['data_list'][0])
-        '''
+        
         page_datetime=datetime.datetime.strptime(item['data_list'][0][-1],'%Y-%m-%d %H:%M:%S')
         if  self.datetime==None or page_datetime <=self.datetime :
             msg='rate no update {0} ---{1}'.format(self.datetime,page_datetime)
             self.logger.info(msg)
             return 
-        '''
         #print(datetimestr)
         self.currentPageIndex+=1
         item['currentPageIndex']=self.currentPageIndex
@@ -99,3 +99,4 @@ class GetexchangeratespiderSpider(scrapy.Spider):
             logger.info(new_url)
             yield Request(new_url,callback=self.parse)
         
+
