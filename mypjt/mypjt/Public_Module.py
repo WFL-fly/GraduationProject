@@ -1,11 +1,19 @@
 # -*- coding: utf-8 -*-
 import os
 import sys
-import logging
+#import logging
 import time,datetime
 import pymysql
+import logging
+from  mypjt.logger import LoggerSet,init_logger,logFilePath
 
-logger=logging.getLogger(sys._getframe().f_code.co_filename)#os.path.abspath('.')+
+#from mypjt.settings  import LOG_FILE
+
+#logfilepathname=init_logFile('logfile')
+#cmdLogSet=LoggerSet(logging.INFO,'',['[%(asctime)s]-[%(filename)s]-[%(levelname)s]-[%(funcName)s]-[%(lineno)s] : %(message)s', '%Y-%m-%d %H:%M:%S'])
+#ileLogSet=LoggerSet(logging.INFO,logFilePath,['[%(asctime)s]-[%(filename)s]-[%(levelname)s]-[%(funcName)s]-[%(lineno)d] : %(message)s', '%Y-%m-%d %H:%M:%S'])
+logger=init_logger(__name__)#,fileLogSet,cmdLogSet
+
 # 货币 中英文缩写对照dict
 currency_translate_dict={'人民币':'CNY','阿联酋迪拉姆':'AED','澳大利亚元':'AUD', \
 '巴西里亚尔':'BRL','加拿大元':'CAD','瑞士法郎':'CHF','丹麦克朗':'DKK','欧元':'EUR', \
@@ -32,14 +40,7 @@ def init_mysql(my_host,my_port,my_user,pw,dn_name,my_charset):
             logger.error('init mysql connect failure,\n error massge: {1}'.format(childtb_name,traceback.format_exc()) )
             conn=None
         return conn
-def init_logFile(logFileName):
-    logFilePath=os.path.join(os.path.abspath('.'),'logfile')
-    if  not os.path.exists(logFilePath):
-        logger.info ("directory %s no exists， create new directory" % logFilePath)
-        os.mkdir(logFilePath)
-    logFilePath=os.path.join(logFilePath,'{0}.log'.format(logFileName))
-    logger.info('init log file path : %s sucessful' % logFilePath)
-    return logFilePath
+
 def check_all_currency_tb(currency_name,currency_tb_name):
     temp_datetime=None
     try :

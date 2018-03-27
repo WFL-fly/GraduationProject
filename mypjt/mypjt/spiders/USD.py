@@ -1,8 +1,7 @@
 
 # -*- coding: utf-8 -*-
 import scrapy
-import scrapy
-import os
+
 import sys
 import logging
 from scrapy.selector import Selector
@@ -11,7 +10,10 @@ from mypjt.items  import MypjtItem
 import time,datetime
 import pymysql
 from  mypjt.Public_Module import check_all_currency_tb,getGroupData
-logger=logging.getLogger(sys._getframe().f_code.co_filename)#os.path.abspath('.')+
+
+from  mypjt.logger import init_logger
+logger=init_logger(__name__)
+
 class UsdSpider(scrapy.Spider):
     name = 'USD'
     allowed_domains = ['zou114.com']

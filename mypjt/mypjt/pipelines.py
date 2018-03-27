@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import scrapy
-import logging
+#import logging
 import os
 import sys
 import openpyxl
@@ -10,14 +10,13 @@ from mypjt.items  import MypjtItem
 import traceback
 import pymysql
 from  mypjt.Public_Module import init_mysql,currency_translate_dict,top_dict
+from  mypjt.logger import init_logger
 
-logger=logging.getLogger(sys._getframe().f_code.co_filename)
+logger=init_logger(__name__)
 
-
-#判断sheet是否存在表头，如果不存在就创建
 def sheet_is_exsit_top(ws,top_list):
     if len(tuple(ws.rows))<=0:
-        ws.append(top_list)
+       ws.append(top_list)
 #在工作表中查找sheet,如果没找到就创建他 create_index<0,添加到末尾
 def find_wb_sheet(wb,sheet_name,create_index):
     sheet_name_list=wb.get_sheet_names()

@@ -1,16 +1,15 @@
 
 import scrapy
-import scrapy
-import os
 import sys
-import logging
 from scrapy.selector import Selector
 from scrapy.http import Request
 from mypjt.items  import MypjtItem
 import time,datetime
 import pymysql
 from  mypjt.Public_Module import check_all_currency_tb,getGroupData
-logger=logging.getLogger(sys._getframe().f_code.co_filename)#os.path.abspath('.')+
+from  mypjt.logger import init_logger
+mylogger=init_logger(__name__)
+
 
 class  GbpSpider(scrapy.Spider):
     name = 'GBP'
@@ -28,10 +27,10 @@ class  GbpSpider(scrapy.Spider):
         #print(self.item['new_update_date'])
         self.exchange_currency_list=['CNY','JPY','EUR','USD','RUB']#人民币 美元 英镑 欧元 卢布
         self.index=0
-        logger.info(self.start_urls[0])
+        mylogger.info(self.start_urls[0])
         check_all_currency_tb(self.currency_name,self.currency_tb_name)
     def parse(self, response):
-        logger.info('get from {0} to {1} exchange rate'.format(self.currency_name,self.exchange_currency_list[self.index] ))
+        mylogger.info('get from {0} to {1} exchange rate'.format(self.currency_name,self.exchange_currency_list[self.index] ))
         res=response.xpath('//table[@id="table1"]//tr').extract()#可以使用
         for i in range(1,len(res)):
             res2=Selector(text=res[i]).xpath('//td/text()').extract()
@@ -42,10 +41,10 @@ class  GbpSpider(scrapy.Spider):
         self.index+=1
         if  self.index<len(self.exchange_currency_list):
             new_url='http://www.zou114.com/agiotage/hl2.asp?from=GBP&to={0}&q=1'.format(self.exchange_currency_list[self.index])
-            logger.info(new_url)
+            mylogger.info(new_url)
             yield Request(new_url,callback=self.parse)
         else:
             self.item['data_list'].append(self.page_data)
             self.item['new_update_date']=datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             yield  self.item
-            logger.info('get from {0} exchange rate finish'.format(self.currency_name))
+            mylogger.info('get from {0} exchange rate finish'.format(self.currency_name))

@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 import logging
 import ctypes
+import os
+import sys
+#from scrapy.settings  import LOG_FILE
 #控制台日志颜色设置
 FOREGROUND_BLACK = 0x00 # black.
 FOREGROUND_DARKBLUE = 0x01 # dark blue.
@@ -41,54 +44,48 @@ BACKGROUND_DICT={'BACKGROUND_WHITE':0x70,'BACKGROUND_BLUE':0x10,'BACKGROUND_GREE
 STD_INPUT_HANDLE= -10
 STD_OUTPUT_HANDLE=-11
 STD_ERROR_HANDLE= -12
+
+def init_logFile(logFileName):
+    logFilePath=os.path.join(os.path.abspath('.'),'logfile')
+    if  not os.path.exists(logFilePath):
+        os.mkdir(logFilePath)
+    logFilePath=os.path.join(logFilePath,'{0}.log'.format(logFileName))
+    return logFilePath
+logFilePath=init_logFile('logfile')
+
 std_out_handle= ctypes.windll.kernel32.GetStdHandle(STD_OUTPUT_HANDLE)
 def set_cmd_color(color,handle=std_out_handle):
     bool =ctypes.windll.kernel32.SetConsoleTextAttribute(handle,color)
-    rerturn bool
+    return bool
+'''
 def get_cmd_color():
     int =ctypes.windll.kernel32.GetConsoleTextAttribute(handle) 
-    rerturn int
+    return int
 default_color=get_cmd_color()
-def reset_color(color=default_color):
-    set_cmd_color(color)
+'''
+def reset_color():
+    set_cmd_color(FOREGROUND_GREEN)
 
 class LoggerSet(object):
-    def __init_(self,Level,FilePath,Fmt):
+    def __init__(self,Level,FilePath,Fmt_list):
+        super(LoggerSet,self).__init__()
         self.level=Level
         self.file_path=FilePath
-        self.fmt=logging.Formatter(Fmt)
-class Logger(object):
-    def __init__(self,moudle_NameAndPath='xxx',CLoggerSet,FLoggerSet):
-        self.logger = logging.getLogger(moudle_NameAndPath)
-        self.logger.setLevel(level=logging.debug)#日志等级
-        #设置CMD日志
-        consoleHandler=logging.StreamHandler()
-        consoleHandler.setFormatter(CLoggerSet.fmt)
-        consoleHandler.setLevel(CLoggerSet.llevel)
-        self.logger.addHandler(consoleHandler)
-        #设置文件日志
-        FileHandler=logging.FileHandler(FLoggerSet.file_path)
-        fileHandler.setFormatter(FLoggerSet.fmt)
-        fileHandler.setLevel(FLoggerSet.level)
-        self.logger.addHandler(fileHandler)
+        self.fmt=logging.Formatter(Fmt_list[0],Fmt_list[1])
 
-    def debug(self,msg,color=default_color):
-        #set_color(color)
-        self.logger.debug(msg)
-        #reset_color()
-    def info(self,msg,color=default_color):
-        #set_color(color)
-        self.logger.info(msg)
-        #reset_color()
-    def error(self,msg,color=FOREGROUND_RED):
-        set_color(color)
-        self.logger.error(msg)
-        reset_color()
-    def warn(self,msg,color=FOREGROUND_YELLOW):
-        set_color(color)
-        self.logger.warn(msg)
-        reset_color()
-    def critical(self,msg,color=FOREGROUND_DARKRED):
-        set_color(color)
-        self.logger.critical(msg)
-        reset_color()
+cmdLogSet_default=LoggerSet(logging.INFO,'',['[%(asctime)s]-[%(name)s]-[%(filename)s]-[%(levelname)s]-[%(funcName)s]-[%(lineno)d] : %(message)s', '%Y-%m-%d %H:%M:%S'])
+fileLogSet_default=LoggerSet(logging.INFO,logFilePath,['[%(asctime)s]-[%(name)s]-[%(filename)s]-[%(levelname)s]-[%(funcName)s]-[%(lineno)d] : %(message)s', '%Y-%m-%d %H:%M:%S'])
+def init_logger(moudle_NameAndPath='xxx',FLoggerSet=fileLogSet_default,CLoggerSet=cmdLogSet_default):
+    logger = logging.getLogger(moudle_NameAndPath)
+    logger.setLevel(level=logging.DEBUG)#日志等级
+    #设置CMD日志
+    #consoleHandler=logging.StreamHandler()
+    #consoleHandler.setFormatter(CLoggerSet.fmt)
+    #consoleHandler.setLevel(CLoggerSet.level)
+    #logger.addHandler(consoleHandler)
+    #设置文件日志
+    fileHandler=logging.FileHandler(FLoggerSet.file_path)
+    fileHandler.setFormatter(FLoggerSet.fmt)
+    fileHandler.setLevel(FLoggerSet.level)
+    logger.addHandler(fileHandler)
+    return logger

@@ -1,16 +1,16 @@
 
 # -*- coding: utf-8 -*-
 import scrapy
-import os
 import sys
-import logging
 from scrapy.selector import Selector
 from scrapy.http import Request
 from mypjt.items  import MypjtItem
 import time,datetime
 import traceback
 from  mypjt.Public_Module import check_all_currency_tb,currency_translate_dict
-logger=logging.getLogger(sys._getframe().f_code.co_filename)#os.path.abspath('.')+
+from  mypjt.logger import init_logger
+
+logger=init_logger(__name__)
 def getGroupData(List_item):
     temp_res=[]
     res3=Selector(text=List_item[0]).xpath('//td/text()').extract()
@@ -42,13 +42,6 @@ class CnySpider(scrapy.Spider):
         self.item=MypjtItem()
         self.item['data_list']=[]
         self.item['currency_name']='CNY'
-        logger.info('init  %s log' % self.name)
-        logFilePath=os.path.join(os.path.abspath('.'),'logfile')
-        if  not os.path.exists(logFilePath):
-            logger.info ("directory %s no exists， create new directory" % logFilePath)
-            os.mkdir(logFilePath)
-        logFilePath=os.path.join(logFilePath,'{0}.log'.format(self.name))
-        logger.info('init log sucessful')
         #获取最新的更新时间
         self.datetime=check_all_currency_tb('CNY',"CNY_tb")
         self.item['new_update_date']=self.datetime
