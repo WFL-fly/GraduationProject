@@ -1,0 +1,15 @@
+start python spider shell
+start run spider CNY , start time: 2018-03-27 18:45:01
+CNY spider run finish , stop time: 2018-03-27 18:45:03 ,run time : 2 s.
+start run spider USD , start time: 2018-03-27 18:45:03
+USD spider run finish , stop time: 2018-03-27 18:45:05 ,run time : 2 s.
+start run spider JPY , start time: 2018-03-27 18:45:05
+./auto_spider.sh: line 37: 09: value too great for base (error token is "09")
+JPY spider run finish , stop time: 2018-03-27 18:45:09 ,run time : 2 s.
+start run spider EUR , start time: 2018-03-27 18:45:09
+./auto_spider.sh: line 48: 09: value too great for base (error token is "09")
+EUR spider run finish , stop time: 2018-03-27 18:45:12 ,run time : 2 s.
+start run spider GBP , start time: 2018-03-27 18:45:12
+GBP spider run finish , stop time: 2018-03-27 18:45:14 ,run time : 2 s.
+start run spider RUB , start time: 2018-03-27 18:45:14
+RUB spider run finish , stop time: 2018-03-27 18:45:17 ,run time : 3 s.

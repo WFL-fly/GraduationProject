@@ -1,0 +1,1948 @@
+[2018-03-27 17:59:21]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 17:59:21]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 17:59:21 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 17:59:21 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 17:59:21 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 17:59:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-27 17:59:21 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 17:59:21]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 17:59:21 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 17:59:21 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 17:59:21]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table CNY_tb exist
+2018-03-27 17:59:21 [mypjt.Public_Module] INFO: table CNY_tb exist
+2018-03-27 17:59:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 17:59:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 17:59:21 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 17:59:21 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 17:59:21 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 17:59:21 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 17:59:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/> (referer: None)
+[2018-03-27 17:59:22]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[49] : 提取数据
+2018-03-27 17:59:22 [mypjt.spiders.CNY] INFO: 提取数据
+[2018-03-27 17:59:22]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[57] : 获取总页数成功10
+2018-03-27 17:59:22 [mypjt.spiders.CNY] INFO: 获取总页数成功10
+[2018-03-27 17:59:22]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[88] : cannot get valid data
+2018-03-27 17:59:22 [mypjt.spiders.CNY] INFO: cannot get valid data
+2018-03-27 17:59:22 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 17:59:22]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 17:59:22 [mypjt.pipelines] INFO: data save finish
+2018-03-27 17:59:22 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 223,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4604,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 9, 59, 22, 211457),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 13,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 61857792,
+ 'memusage/startup': 61857792,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 3, 27, 9, 59, 21, 948770)}
+2018-03-27 17:59:22 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:43:36]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:43:36]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:43:36 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:43:36 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:43:37 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:43:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-27 18:43:37 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:37]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:43:37 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:43:37 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:37]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table CNY_tb exist
+2018-03-27 18:43:37 [mypjt.Public_Module] INFO: table CNY_tb exist
+2018-03-27 18:43:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:43:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:43:37 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:43:37 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:43:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:43:37 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/> (referer: None)
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[49] : 提取数据
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: 提取数据
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[57] : 获取总页数成功10
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: 获取总页数成功10
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[96] : 1
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: 1
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[101] : http://www.boc.cn/sourcedb/whpj/index_1.html
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: http://www.boc.cn/sourcedb/whpj/index_1.html
+2018-03-27 18:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_1.html> (referer: http://www.boc.cn/sourcedb/whpj/)
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[49] : 提取数据
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: 提取数据
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[96] : 2
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: 2
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[101] : http://www.boc.cn/sourcedb/whpj/index_2.html
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: http://www.boc.cn/sourcedb/whpj/index_2.html
+2018-03-27 18:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_2.html> (referer: http://www.boc.cn/sourcedb/whpj/index_1.html)
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[49] : 提取数据
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: 提取数据
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[96] : 3
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: 3
+[2018-03-27 18:43:37]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[101] : http://www.boc.cn/sourcedb/whpj/index_3.html
+2018-03-27 18:43:37 [mypjt.spiders.CNY] INFO: http://www.boc.cn/sourcedb/whpj/index_3.html
+2018-03-27 18:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_3.html> (referer: http://www.boc.cn/sourcedb/whpj/index_2.html)
+[2018-03-27 18:43:38]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[49] : 提取数据
+2018-03-27 18:43:38 [mypjt.spiders.CNY] INFO: 提取数据
+[2018-03-27 18:43:38]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[96] : 4
+2018-03-27 18:43:38 [mypjt.spiders.CNY] INFO: 4
+[2018-03-27 18:43:38]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[101] : http://www.boc.cn/sourcedb/whpj/index_4.html
+2018-03-27 18:43:38 [mypjt.spiders.CNY] INFO: http://www.boc.cn/sourcedb/whpj/index_4.html
+2018-03-27 18:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/index_4.html> (referer: http://www.boc.cn/sourcedb/whpj/index_3.html)
+[2018-03-27 18:43:38]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[49] : 提取数据
+2018-03-27 18:43:38 [mypjt.spiders.CNY] INFO: 提取数据
+[2018-03-27 18:43:38]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:43:38 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:43:38]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:43:38 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:43:38]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:43:38 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:43:38]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:43:38 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:43:38]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:43:38 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:43:38]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update CNY update_time sucessful
+2018-03-27 18:43:38 [mypjt.pipelines] INFO: update CNY update_time sucessful
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_AED_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_AUD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_BRL_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_CAD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_CHF_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_DKK_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_HKD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_IDR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_INR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_KRW_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_MOP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_MYR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_NOK_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_NZD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_PHP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_RUB_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:38 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_SAR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:39 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_SEK_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:39 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_SGD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:39 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_THB_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:39 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_TRY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:39 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_TWD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:39 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_USD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:39 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_ZAR_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:39]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:43:39 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:43:39 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.boc.cn/sourcedb/whpj/index_4.html>
+None
+[2018-03-27 18:43:39]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[85] : get all pages data
+2018-03-27 18:43:39 [mypjt.spiders.CNY] INFO: get all pages data
+2018-03-27 18:43:39 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:43:39]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:43:39 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:43:39 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1371,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 23040,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 43, 39, 142543),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 32,
+ 'log_count/WARNING': 57,
+ 'memusage/max': 61874176,
+ 'memusage/startup': 61874176,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 43, 37, 308506)}
+2018-03-27 18:43:39 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:43:40]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:43:40]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:43:40 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:43:40 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:43:40 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:43:40 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:43:40]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[__init__]-[33] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=CNY&q=1
+2018-03-27 18:43:40 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=CNY&q=1
+2018-03-27 18:43:40 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:40]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:43:40 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:43:40 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:40]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table USD_tb exist
+2018-03-27 18:43:40 [mypjt.Public_Module] INFO: table USD_tb exist
+2018-03-27 18:43:40 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:43:40 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:43:40 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:43:40 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:43:40 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:43:40 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=CNY&q=1> (referer: None)
+[2018-03-27 18:43:40]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to CNY exchange rate
+2018-03-27 18:43:40 [mypjt.spiders.USD] INFO: get from USD to CNY exchange rate
+[2018-03-27 18:43:40]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[47] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=JPY&q=1
+2018-03-27 18:43:40 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=JPY&q=1
+2018-03-27 18:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=JPY&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=CNY&q=1)
+[2018-03-27 18:43:41]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to JPY exchange rate
+2018-03-27 18:43:41 [mypjt.spiders.USD] INFO: get from USD to JPY exchange rate
+[2018-03-27 18:43:41]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[47] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=GBP&q=1
+2018-03-27 18:43:41 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=GBP&q=1
+2018-03-27 18:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=JPY&q=1)
+[2018-03-27 18:43:41]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to GBP exchange rate
+2018-03-27 18:43:41 [mypjt.spiders.USD] INFO: get from USD to GBP exchange rate
+[2018-03-27 18:43:41]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[47] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=EUR&q=1
+2018-03-27 18:43:41 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=EUR&q=1
+2018-03-27 18:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=GBP&q=1)
+[2018-03-27 18:43:41]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to EUR exchange rate
+2018-03-27 18:43:41 [mypjt.spiders.USD] INFO: get from USD to EUR exchange rate
+[2018-03-27 18:43:41]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[47] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=RUB&q=1
+2018-03-27 18:43:41 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=RUB&q=1
+2018-03-27 18:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=EUR&q=1)
+[2018-03-27 18:43:41]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to RUB exchange rate
+2018-03-27 18:43:41 [mypjt.spiders.USD] INFO: get from USD to RUB exchange rate
+[2018-03-27 18:43:41]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:43:41 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:43:41]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:43:41 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:43:41 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:43:41]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:43:41 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:43:41]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:43:41 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:43:41]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:43:41 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:43:41]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update USD update_time sucessful
+2018-03-27 18:43:41 [mypjt.pipelines] INFO: update USD update_time sucessful
+2018-03-27 18:43:41 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:41 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:41]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:43:41 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:43:41 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=USD&to=RUB&q=1>
+None
+[2018-03-27 18:43:41]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[53] : get from USD exchange rate finish
+2018-03-27 18:43:41 [mypjt.spiders.USD] INFO: get from USD exchange rate finish
+2018-03-27 18:43:41 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:43:41]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:43:41 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:43:41 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32676,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 43, 41, 723689),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61894656,
+ 'memusage/startup': 61894656,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 43, 40, 499351)}
+2018-03-27 18:43:41 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:43:42]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:43:42]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:43:42 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:43:42 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:43:42 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:43:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:43:42]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[__init__]-[30] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1
+2018-03-27 18:43:42 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1
+2018-03-27 18:43:42 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:42]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:43:42 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:43:42 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:42]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table JPY_tb exist
+2018-03-27 18:43:42 [mypjt.Public_Module] INFO: table JPY_tb exist
+2018-03-27 18:43:42 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:43:42 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:43:43 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:43:43 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:43:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:43:43 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1> (referer: None)
+[2018-03-27 18:43:43]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to CNY exchange rate
+2018-03-27 18:43:43 [mypjt.spiders.JPY] INFO: get from JPY to CNY exchange rate
+[2018-03-27 18:43:43]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1
+2018-03-27 18:43:43 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1
+2018-03-27 18:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1)
+[2018-03-27 18:43:43]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to USD exchange rate
+2018-03-27 18:43:43 [mypjt.spiders.JPY] INFO: get from JPY to USD exchange rate
+[2018-03-27 18:43:43]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1
+2018-03-27 18:43:43 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1
+2018-03-27 18:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1)
+[2018-03-27 18:43:43]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to GBP exchange rate
+2018-03-27 18:43:43 [mypjt.spiders.JPY] INFO: get from JPY to GBP exchange rate
+[2018-03-27 18:43:43]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1
+2018-03-27 18:43:43 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1
+2018-03-27 18:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1)
+[2018-03-27 18:43:43]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to EUR exchange rate
+2018-03-27 18:43:43 [mypjt.spiders.JPY] INFO: get from JPY to EUR exchange rate
+[2018-03-27 18:43:43]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1
+2018-03-27 18:43:43 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1
+2018-03-27 18:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1)
+[2018-03-27 18:43:44]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to RUB exchange rate
+2018-03-27 18:43:44 [mypjt.spiders.JPY] INFO: get from JPY to RUB exchange rate
+[2018-03-27 18:43:44]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:43:44 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:43:44]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:43:44 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:43:44 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:43:44]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:43:44 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:43:44]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:43:44 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:43:44]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:43:44 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:43:44]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update JPY update_time sucessful
+2018-03-27 18:43:44 [mypjt.pipelines] INFO: update JPY update_time sucessful
+2018-03-27 18:43:44 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_USD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:44 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:44]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:43:44 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:43:44 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1>
+None
+[2018-03-27 18:43:44]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[50] : get from JPY exchange rate finish
+2018-03-27 18:43:44 [mypjt.spiders.JPY] INFO: get from JPY exchange rate finish
+2018-03-27 18:43:44 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:43:44]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:43:44 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:43:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32614,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 43, 44, 228501),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61882368,
+ 'memusage/startup': 61882368,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 43, 43, 40500)}
+2018-03-27 18:43:44 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:43:45]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:43:45]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:43:45 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:43:45 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:43:45 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:43:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:43:45]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[__init__]-[31] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=CNY&q=1
+2018-03-27 18:43:45 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=CNY&q=1
+2018-03-27 18:43:45 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:45]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:43:45 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:43:45 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:45]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table EUR_tb exist
+2018-03-27 18:43:45 [mypjt.Public_Module] INFO: table EUR_tb exist
+2018-03-27 18:43:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:43:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:43:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:43:45 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:43:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:43:45 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=CNY&q=1> (referer: None)
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to CNY exchange rate
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: get from EUR to CNY exchange rate
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[45] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=JPY&q=1
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=JPY&q=1
+2018-03-27 18:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=JPY&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=CNY&q=1)
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to JPY exchange rate
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: get from EUR to JPY exchange rate
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[45] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=GBP&q=1
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=GBP&q=1
+2018-03-27 18:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=JPY&q=1)
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to GBP exchange rate
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: get from EUR to GBP exchange rate
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[45] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=USD&q=1
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=USD&q=1
+2018-03-27 18:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=GBP&q=1)
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to USD exchange rate
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: get from EUR to USD exchange rate
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[45] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=RUB&q=1
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=RUB&q=1
+2018-03-27 18:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=USD&q=1)
+[2018-03-27 18:43:46]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to RUB exchange rate
+2018-03-27 18:43:46 [mypjt.spiders.EUR] INFO: get from EUR to RUB exchange rate
+[2018-03-27 18:43:47]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:43:47 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:43:47]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:43:47 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:43:47 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:43:47]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:43:47 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:43:47]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:43:47 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:43:47]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:43:47 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:43:47]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update EUR update_time sucessful
+2018-03-27 18:43:47 [mypjt.pipelines] INFO: update EUR update_time sucessful
+2018-03-27 18:43:47 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_USD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:47 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:47]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:43:47 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:43:47 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=RUB&q=1>
+None
+[2018-03-27 18:43:47]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[51] : get from EUR exchange rate finish
+2018-03-27 18:43:47 [mypjt.spiders.EUR] INFO: get from EUR exchange rate finish
+2018-03-27 18:43:47 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:43:47]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:43:47 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:43:47 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32703,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 43, 47, 48141),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61882368,
+ 'memusage/startup': 61882368,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 43, 45, 562483)}
+2018-03-27 18:43:47 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:43:47]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:43:47]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:43:48 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:43:48 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:43:48 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:43:48 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:43:48]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[__init__]-[30] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=CNY&q=1
+2018-03-27 18:43:48 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=CNY&q=1
+2018-03-27 18:43:48 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:48]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:43:48 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:43:48 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:48]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table GBP_tb exist
+2018-03-27 18:43:48 [mypjt.Public_Module] INFO: table GBP_tb exist
+2018-03-27 18:43:48 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:43:48 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:43:48 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:43:48 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:43:48 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:43:48 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=CNY&q=1> (referer: None)
+[2018-03-27 18:43:48]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to CNY exchange rate
+2018-03-27 18:43:48 [mypjt.spiders.GBP] INFO: get from GBP to CNY exchange rate
+[2018-03-27 18:43:48]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=JPY&q=1
+2018-03-27 18:43:48 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=JPY&q=1
+2018-03-27 18:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=JPY&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=CNY&q=1)
+[2018-03-27 18:43:48]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to JPY exchange rate
+2018-03-27 18:43:48 [mypjt.spiders.GBP] INFO: get from GBP to JPY exchange rate
+[2018-03-27 18:43:48]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=EUR&q=1
+2018-03-27 18:43:48 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=EUR&q=1
+2018-03-27 18:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=JPY&q=1)
+[2018-03-27 18:43:49]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to EUR exchange rate
+2018-03-27 18:43:49 [mypjt.spiders.GBP] INFO: get from GBP to EUR exchange rate
+[2018-03-27 18:43:49]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=USD&q=1
+2018-03-27 18:43:49 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=USD&q=1
+2018-03-27 18:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=EUR&q=1)
+[2018-03-27 18:43:49]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to USD exchange rate
+2018-03-27 18:43:49 [mypjt.spiders.GBP] INFO: get from GBP to USD exchange rate
+[2018-03-27 18:43:49]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=RUB&q=1
+2018-03-27 18:43:49 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=RUB&q=1
+2018-03-27 18:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=USD&q=1)
+[2018-03-27 18:43:49]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to RUB exchange rate
+2018-03-27 18:43:49 [mypjt.spiders.GBP] INFO: get from GBP to RUB exchange rate
+[2018-03-27 18:43:49]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:43:49 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:43:49]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:43:49 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:43:49 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:43:49]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:43:49 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:43:49]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:43:49 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:43:49]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:43:49 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:43:49]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update GBP update_time sucessful
+2018-03-27 18:43:49 [mypjt.pipelines] INFO: update GBP update_time sucessful
+2018-03-27 18:43:49 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_USD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:49 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:49]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:43:49 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:43:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=RUB&q=1>
+None
+[2018-03-27 18:43:49]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[50] : get from GBP exchange rate finish
+2018-03-27 18:43:49 [mypjt.spiders.GBP] INFO: get from GBP exchange rate finish
+2018-03-27 18:43:49 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:43:49]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:43:49 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:43:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32735,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 43, 49, 585635),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61874176,
+ 'memusage/startup': 61874176,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 43, 48, 374645)}
+2018-03-27 18:43:49 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:43:50]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:43:50]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:43:50 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:43:50 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:43:50 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:43:50 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:43:50]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[__init__]-[30] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=CNY&q=1
+2018-03-27 18:43:50 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=CNY&q=1
+2018-03-27 18:43:50 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:50]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:43:50 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:43:50 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:50]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table RUB_tb exist
+2018-03-27 18:43:50 [mypjt.Public_Module] INFO: table RUB_tb exist
+2018-03-27 18:43:50 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:43:50 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:43:50 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:43:50 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:43:50 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:43:50 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=CNY&q=1> (referer: None)
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to CNY exchange rate
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: get from RUB to CNY exchange rate
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=JPY&q=1
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=JPY&q=1
+2018-03-27 18:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=JPY&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=CNY&q=1)
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to JPY exchange rate
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: get from RUB to JPY exchange rate
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=GBP&q=1
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=GBP&q=1
+2018-03-27 18:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=JPY&q=1)
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to GBP exchange rate
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: get from RUB to GBP exchange rate
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=EUR&q=1
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=EUR&q=1
+2018-03-27 18:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=GBP&q=1)
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to EUR exchange rate
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: get from RUB to EUR exchange rate
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=USD&q=1
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=USD&q=1
+2018-03-27 18:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=EUR&q=1)
+[2018-03-27 18:43:51]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to USD exchange rate
+2018-03-27 18:43:51 [mypjt.spiders.RUB] INFO: get from RUB to USD exchange rate
+[2018-03-27 18:43:51]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:43:51 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:43:51]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:43:51 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:43:51 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:51 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:51 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:51 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:51 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:43:51 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:43:51]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:43:51 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:43:52]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:43:52 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:43:52]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:43:52 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:43:52]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update RUB update_time sucessful
+2018-03-27 18:43:52 [mypjt.pipelines] INFO: update RUB update_time sucessful
+2018-03-27 18:43:52 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:52 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:52 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:52 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:43:52 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_USD_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:43:52]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:43:52 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:43:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=USD&q=1>
+None
+[2018-03-27 18:43:52]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[50] : get from RUB exchange rate finish
+2018-03-27 18:43:52 [mypjt.spiders.RUB] INFO: get from RUB exchange rate finish
+2018-03-27 18:43:52 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:43:52]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:43:52 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:43:52 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32556,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 43, 52, 47309),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61882368,
+ 'memusage/startup': 61882368,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 43, 50, 906348)}
+2018-03-27 18:43:52 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:45:02]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:45:02]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:45:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:45:02 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:45:02 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:45:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-27 18:45:02 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:02]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:45:02 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:45:02 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'CNY_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:02]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table CNY_tb exist
+2018-03-27 18:45:02 [mypjt.Public_Module] INFO: table CNY_tb exist
+2018-03-27 18:45:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:45:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:45:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:45:02 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:45:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:45:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:45:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.boc.cn/sourcedb/whpj/> (referer: None)
+[2018-03-27 18:45:03]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[49] : 提取数据
+2018-03-27 18:45:03 [mypjt.spiders.CNY] INFO: 提取数据
+[2018-03-27 18:45:03]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[57] : 获取总页数成功10
+2018-03-27 18:45:03 [mypjt.spiders.CNY] INFO: 获取总页数成功10
+[2018-03-27 18:45:03]-[mypjt.spiders.CNY]-[CNY.py]-[INFO]-[parse]-[88] : cannot get valid data
+2018-03-27 18:45:03 [mypjt.spiders.CNY] INFO: cannot get valid data
+2018-03-27 18:45:03 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:45:03]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:45:03 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:45:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 223,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 4611,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 45, 3, 73748),
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 13,
+ 'log_count/WARNING': 2,
+ 'memusage/max': 61886464,
+ 'memusage/startup': 61886464,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 45, 2, 809995)}
+2018-03-27 18:45:03 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:45:04]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:45:04]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:45:04 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:45:04 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:45:04 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:45:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:45:04]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[__init__]-[33] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=CNY&q=1
+2018-03-27 18:45:04 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=CNY&q=1
+2018-03-27 18:45:04 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:04]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:45:04 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:45:04 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:04]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table USD_tb exist
+2018-03-27 18:45:04 [mypjt.Public_Module] INFO: table USD_tb exist
+2018-03-27 18:45:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:45:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:45:04 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:45:04 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:45:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:45:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:45:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=CNY&q=1> (referer: None)
+[2018-03-27 18:45:04]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to CNY exchange rate
+2018-03-27 18:45:04 [mypjt.spiders.USD] INFO: get from USD to CNY exchange rate
+[2018-03-27 18:45:04]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[47] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=JPY&q=1
+2018-03-27 18:45:04 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=JPY&q=1
+2018-03-27 18:45:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=JPY&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=CNY&q=1)
+[2018-03-27 18:45:05]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to JPY exchange rate
+2018-03-27 18:45:05 [mypjt.spiders.USD] INFO: get from USD to JPY exchange rate
+[2018-03-27 18:45:05]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[47] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=GBP&q=1
+2018-03-27 18:45:05 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=GBP&q=1
+2018-03-27 18:45:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=JPY&q=1)
+[2018-03-27 18:45:05]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to GBP exchange rate
+2018-03-27 18:45:05 [mypjt.spiders.USD] INFO: get from USD to GBP exchange rate
+[2018-03-27 18:45:05]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[47] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=EUR&q=1
+2018-03-27 18:45:05 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=EUR&q=1
+2018-03-27 18:45:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=GBP&q=1)
+[2018-03-27 18:45:05]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to EUR exchange rate
+2018-03-27 18:45:05 [mypjt.spiders.USD] INFO: get from USD to EUR exchange rate
+[2018-03-27 18:45:05]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[47] : http://www.zou114.com/agiotage/hl2.asp?from=USD&to=RUB&q=1
+2018-03-27 18:45:05 [mypjt.spiders.USD] INFO: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=RUB&q=1
+2018-03-27 18:45:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=USD&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=USD&to=EUR&q=1)
+[2018-03-27 18:45:05]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[36] : get from USD to RUB exchange rate
+2018-03-27 18:45:05 [mypjt.spiders.USD] INFO: get from USD to RUB exchange rate
+[2018-03-27 18:45:05]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:45:05 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:45:05]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:45:05 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:45:05 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:45:05]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:45:05 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:45:05]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:45:05 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:45:05]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:45:05 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:45:05]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update USD update_time sucessful
+2018-03-27 18:45:05 [mypjt.pipelines] INFO: update USD update_time sucessful
+2018-03-27 18:45:05 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:05 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'USD_RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:05]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:45:05 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:45:05 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=USD&to=RUB&q=1>
+None
+[2018-03-27 18:45:05]-[mypjt.spiders.USD]-[USD.py]-[INFO]-[parse]-[53] : get from USD exchange rate finish
+2018-03-27 18:45:05 [mypjt.spiders.USD] INFO: get from USD exchange rate finish
+2018-03-27 18:45:05 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:45:05]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:45:05 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:45:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32688,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 45, 5, 718265),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61894656,
+ 'memusage/startup': 61894656,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 45, 4, 380730)}
+2018-03-27 18:45:05 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:45:06]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:45:06]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:45:06 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:45:06 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:45:06 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:45:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:45:06]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[__init__]-[30] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1
+2018-03-27 18:45:06 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1
+2018-03-27 18:45:06 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:06]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:45:06 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:45:06 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:06]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table JPY_tb exist
+2018-03-27 18:45:06 [mypjt.Public_Module] INFO: table JPY_tb exist
+2018-03-27 18:45:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:45:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:45:07 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:45:07 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:45:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:45:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:45:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1> (referer: None)
+[2018-03-27 18:45:07]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to CNY exchange rate
+2018-03-27 18:45:07 [mypjt.spiders.JPY] INFO: get from JPY to CNY exchange rate
+[2018-03-27 18:45:07]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1
+2018-03-27 18:45:07 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1
+2018-03-27 18:45:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=CNY&q=1)
+[2018-03-27 18:45:08]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to USD exchange rate
+2018-03-27 18:45:08 [mypjt.spiders.JPY] INFO: get from JPY to USD exchange rate
+[2018-03-27 18:45:08]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1
+2018-03-27 18:45:08 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1
+2018-03-27 18:45:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=USD&q=1)
+[2018-03-27 18:45:08]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to GBP exchange rate
+2018-03-27 18:45:08 [mypjt.spiders.JPY] INFO: get from JPY to GBP exchange rate
+[2018-03-27 18:45:08]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1
+2018-03-27 18:45:08 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1
+2018-03-27 18:45:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=GBP&q=1)
+[2018-03-27 18:45:09]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to EUR exchange rate
+2018-03-27 18:45:09 [mypjt.spiders.JPY] INFO: get from JPY to EUR exchange rate
+[2018-03-27 18:45:09]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1
+2018-03-27 18:45:09 [mypjt.spiders.JPY] INFO: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1
+2018-03-27 18:45:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=EUR&q=1)
+[2018-03-27 18:45:09]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[33] : get from JPY to RUB exchange rate
+2018-03-27 18:45:09 [mypjt.spiders.JPY] INFO: get from JPY to RUB exchange rate
+[2018-03-27 18:45:09]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:45:09 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:45:09]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:45:09 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:45:09 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:45:09]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:45:09 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:45:09]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:45:09 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:45:09]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:45:09 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:45:09]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update JPY update_time sucessful
+2018-03-27 18:45:09 [mypjt.pipelines] INFO: update JPY update_time sucessful
+2018-03-27 18:45:09 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_USD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:09 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'JPY_RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:09]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:45:09 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:45:09 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=JPY&to=RUB&q=1>
+None
+[2018-03-27 18:45:09]-[mypjt.spiders.JPY]-[JPY.py]-[INFO]-[parse]-[50] : get from JPY exchange rate finish
+2018-03-27 18:45:09 [mypjt.spiders.JPY] INFO: get from JPY exchange rate finish
+2018-03-27 18:45:09 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:45:09]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:45:09 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:45:09 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32463,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 45, 9, 756269),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61878272,
+ 'memusage/startup': 61878272,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 45, 7, 64101)}
+2018-03-27 18:45:09 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:45:10]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:45:10]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:45:10 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:45:10 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:45:10 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:45:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:45:10]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[__init__]-[31] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=CNY&q=1
+2018-03-27 18:45:10 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=CNY&q=1
+2018-03-27 18:45:10 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:10]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:45:10 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:45:10 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:10]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table EUR_tb exist
+2018-03-27 18:45:10 [mypjt.Public_Module] INFO: table EUR_tb exist
+2018-03-27 18:45:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:45:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:45:11 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:45:11 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:45:11 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:45:11 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:45:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=CNY&q=1> (referer: None)
+[2018-03-27 18:45:11]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to CNY exchange rate
+2018-03-27 18:45:11 [mypjt.spiders.EUR] INFO: get from EUR to CNY exchange rate
+[2018-03-27 18:45:11]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[45] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=JPY&q=1
+2018-03-27 18:45:11 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=JPY&q=1
+2018-03-27 18:45:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=JPY&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=CNY&q=1)
+[2018-03-27 18:45:11]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to JPY exchange rate
+2018-03-27 18:45:11 [mypjt.spiders.EUR] INFO: get from EUR to JPY exchange rate
+[2018-03-27 18:45:11]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[45] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=GBP&q=1
+2018-03-27 18:45:11 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=GBP&q=1
+2018-03-27 18:45:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=JPY&q=1)
+[2018-03-27 18:45:11]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to GBP exchange rate
+2018-03-27 18:45:11 [mypjt.spiders.EUR] INFO: get from EUR to GBP exchange rate
+[2018-03-27 18:45:11]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[45] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=USD&q=1
+2018-03-27 18:45:11 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=USD&q=1
+2018-03-27 18:45:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=GBP&q=1)
+[2018-03-27 18:45:12]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to USD exchange rate
+2018-03-27 18:45:12 [mypjt.spiders.EUR] INFO: get from EUR to USD exchange rate
+[2018-03-27 18:45:12]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[45] : http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=RUB&q=1
+2018-03-27 18:45:12 [mypjt.spiders.EUR] INFO: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=RUB&q=1
+2018-03-27 18:45:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=USD&q=1)
+[2018-03-27 18:45:12]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[34] : get from EUR to RUB exchange rate
+2018-03-27 18:45:12 [mypjt.spiders.EUR] INFO: get from EUR to RUB exchange rate
+[2018-03-27 18:45:12]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:45:12 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:45:12]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:45:12 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:45:12 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:45:12]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:45:12 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:45:12]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:45:12 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:45:12]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:45:12 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:45:12]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update EUR update_time sucessful
+2018-03-27 18:45:12 [mypjt.pipelines] INFO: update EUR update_time sucessful
+2018-03-27 18:45:12 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_USD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:12 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'EUR_RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:12]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:45:12 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:45:12 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=EUR&to=RUB&q=1>
+None
+[2018-03-27 18:45:12]-[mypjt.spiders.EUR]-[EUR.py]-[INFO]-[parse]-[51] : get from EUR exchange rate finish
+2018-03-27 18:45:12 [mypjt.spiders.EUR] INFO: get from EUR exchange rate finish
+2018-03-27 18:45:12 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:45:12]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:45:12 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:45:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32489,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 45, 12, 264652),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61886464,
+ 'memusage/startup': 61886464,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 45, 11, 69307)}
+2018-03-27 18:45:12 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:45:13]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:45:13]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:45:13 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:45:13 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:45:13 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:45:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:45:13]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[__init__]-[30] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=CNY&q=1
+2018-03-27 18:45:13 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=CNY&q=1
+2018-03-27 18:45:13 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:13]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:45:13 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:45:13 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:13]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table GBP_tb exist
+2018-03-27 18:45:13 [mypjt.Public_Module] INFO: table GBP_tb exist
+2018-03-27 18:45:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:45:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:45:13 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:45:13 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:45:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:45:13 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:45:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=CNY&q=1> (referer: None)
+[2018-03-27 18:45:13]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to CNY exchange rate
+2018-03-27 18:45:13 [mypjt.spiders.GBP] INFO: get from GBP to CNY exchange rate
+[2018-03-27 18:45:13]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=JPY&q=1
+2018-03-27 18:45:13 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=JPY&q=1
+2018-03-27 18:45:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=JPY&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=CNY&q=1)
+[2018-03-27 18:45:14]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to JPY exchange rate
+2018-03-27 18:45:14 [mypjt.spiders.GBP] INFO: get from GBP to JPY exchange rate
+[2018-03-27 18:45:14]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=EUR&q=1
+2018-03-27 18:45:14 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=EUR&q=1
+2018-03-27 18:45:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=JPY&q=1)
+[2018-03-27 18:45:14]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to EUR exchange rate
+2018-03-27 18:45:14 [mypjt.spiders.GBP] INFO: get from GBP to EUR exchange rate
+[2018-03-27 18:45:14]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=USD&q=1
+2018-03-27 18:45:14 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=USD&q=1
+2018-03-27 18:45:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=EUR&q=1)
+[2018-03-27 18:45:14]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to USD exchange rate
+2018-03-27 18:45:14 [mypjt.spiders.GBP] INFO: get from GBP to USD exchange rate
+[2018-03-27 18:45:14]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=RUB&q=1
+2018-03-27 18:45:14 [mypjt.spiders.GBP] INFO: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=RUB&q=1
+2018-03-27 18:45:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=RUB&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=USD&q=1)
+[2018-03-27 18:45:14]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[33] : get from GBP to RUB exchange rate
+2018-03-27 18:45:14 [mypjt.spiders.GBP] INFO: get from GBP to RUB exchange rate
+[2018-03-27 18:45:14]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:45:14 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:45:14]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:45:14 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:45:14 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:45:14]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:45:14 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:45:14]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:45:14 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:45:14]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:45:14 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:45:14]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update GBP update_time sucessful
+2018-03-27 18:45:14 [mypjt.pipelines] INFO: update GBP update_time sucessful
+2018-03-27 18:45:14 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_USD_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:14 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'GBP_RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:14]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:45:14 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:45:14 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=GBP&to=RUB&q=1>
+None
+[2018-03-27 18:45:14]-[mypjt.spiders.GBP]-[GBP.py]-[INFO]-[parse]-[50] : get from GBP exchange rate finish
+2018-03-27 18:45:14 [mypjt.spiders.GBP] INFO: get from GBP exchange rate finish
+2018-03-27 18:45:14 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:45:14]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:45:14 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:45:14 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32477,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 45, 14, 876198),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61882368,
+ 'memusage/startup': 61882368,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 45, 13, 579883)}
+2018-03-27 18:45:14 [scrapy.core.engine] INFO: Spider closed (finished)
+[2018-03-27 18:45:15]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[107] : LOG_ENABLED=True ,
+LOG_ENCODING=utf-8,
+LOG_STDOUT=False
+LOG_FILE=/GraduationProject/mypjt/mypjt/logfile/logfile.log
+LOG_LEVEL=DEBUG
+
+[2018-03-27 18:45:15]-[mypjt.settings]-[settings.py]-[INFO]-[<module>]-[108] : init log setting
+2018-03-27 18:45:15 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: mypjt)
+2018-03-27 18:45:15 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.9.0, Python 3.6.4 (default, Mar  5 2018, 20:05:20) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0g  2 Nov 2017), cryptography 2.1.4, Platform Linux-3.10.0-693.2.2.el7.x86_64-x86_64-with-centos-7.4.1708-Core
+2018-03-27 18:45:15 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'mypjt', 'LOG_FILE': '/GraduationProject/mypjt/mypjt/logfile/logfile.log', 'NEWSPIDER_MODULE': 'mypjt.spiders', 'SPIDER_MODULES': ['mypjt.spiders']}
+2018-03-27 18:45:15 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+[2018-03-27 18:45:15]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[__init__]-[30] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=CNY&q=1
+2018-03-27 18:45:15 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=CNY&q=1
+2018-03-27 18:45:15 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'all_currency_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:15]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[61] :  table all_currency_tb exist
+2018-03-27 18:45:15 [mypjt.Public_Module] INFO:  table all_currency_tb exist
+2018-03-27 18:45:15 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:15]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[check_all_currency_tb]-[70] : table RUB_tb exist
+2018-03-27 18:45:15 [mypjt.Public_Module] INFO: table RUB_tb exist
+2018-03-27 18:45:15 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-27 18:45:15 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-27 18:45:16 [scrapy.middleware] INFO: Enabled item pipelines:
+['mypjt.pipelines.MypjtPipeline']
+2018-03-27 18:45:16 [scrapy.core.engine] INFO: Spider opened
+2018-03-27 18:45:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-27 18:45:16 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-27 18:45:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=CNY&q=1> (referer: None)
+[2018-03-27 18:45:16]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to CNY exchange rate
+2018-03-27 18:45:16 [mypjt.spiders.RUB] INFO: get from RUB to CNY exchange rate
+[2018-03-27 18:45:16]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=JPY&q=1
+2018-03-27 18:45:16 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=JPY&q=1
+2018-03-27 18:45:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=JPY&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=CNY&q=1)
+[2018-03-27 18:45:16]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to JPY exchange rate
+2018-03-27 18:45:16 [mypjt.spiders.RUB] INFO: get from RUB to JPY exchange rate
+[2018-03-27 18:45:16]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=GBP&q=1
+2018-03-27 18:45:16 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=GBP&q=1
+2018-03-27 18:45:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=GBP&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=JPY&q=1)
+[2018-03-27 18:45:16]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to GBP exchange rate
+2018-03-27 18:45:16 [mypjt.spiders.RUB] INFO: get from RUB to GBP exchange rate
+[2018-03-27 18:45:16]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=EUR&q=1
+2018-03-27 18:45:16 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=EUR&q=1
+2018-03-27 18:45:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=EUR&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=GBP&q=1)
+[2018-03-27 18:45:17]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to EUR exchange rate
+2018-03-27 18:45:17 [mypjt.spiders.RUB] INFO: get from RUB to EUR exchange rate
+[2018-03-27 18:45:17]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[44] : http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=USD&q=1
+2018-03-27 18:45:17 [mypjt.spiders.RUB] INFO: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=USD&q=1
+2018-03-27 18:45:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=USD&q=1> (referer: http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=EUR&q=1)
+[2018-03-27 18:45:17]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[33] : get from RUB to USD exchange rate
+2018-03-27 18:45:17 [mypjt.spiders.RUB] INFO: get from RUB to USD exchange rate
+[2018-03-27 18:45:17]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[init_excel_table]-[61] : init excel
+2018-03-27 18:45:17 [mypjt.pipelines] INFO: init excel
+[2018-03-27 18:45:17]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[89] : write excel
+2018-03-27 18:45:17 [mypjt.pipelines] INFO: write excel
+2018-03-27 18:45:17 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /GraduationProject/mypjt/mypjt/pipelines.py:22: DeprecationWarning: Call to deprecated function get_sheet_names (Use wb.sheetnames).
+  sheet_name_list=wb.get_sheet_names()
+
+[2018-03-27 18:45:17]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[103] : write excel finish
+2018-03-27 18:45:17 [mypjt.pipelines] INFO: write excel finish
+[2018-03-27 18:45:17]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_excel]-[109] : close excel
+2018-03-27 18:45:17 [mypjt.pipelines] INFO: close excel
+[2018-03-27 18:45:17]-[mypjt.Public_Module]-[Public_Module.py]-[INFO]-[init_mysql]-[36] : init mysql connect
+2018-03-27 18:45:17 [mypjt.Public_Module] INFO: init mysql connect
+[2018-03-27 18:45:17]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[update_datatime]-[83] : update RUB update_time sucessful
+2018-03-27 18:45:17 [mypjt.pipelines] INFO: update RUB update_time sucessful
+2018-03-27 18:45:17 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_CNY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_JPY_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_GBP_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_EUR_tb' already exists")
+  self._do_get_result()
+
+2018-03-27 18:45:17 [py.warnings] WARNING: /usr/local/lib/python3.6/site-packages/pymysql/cursors.py:322: Warning: (1050, "Table 'RUB_USD_tb' already exists")
+  self._do_get_result()
+
+[2018-03-27 18:45:17]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[save_to_mysql]-[232] : close mysql connect
+2018-03-27 18:45:17 [mypjt.pipelines] INFO: close mysql connect
+2018-03-27 18:45:17 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.zou114.com/agiotage/hl2.asp?from=RUB&to=USD&q=1>
+None
+[2018-03-27 18:45:17]-[mypjt.spiders.RUB]-[RUB.py]-[INFO]-[parse]-[50] : get from RUB exchange rate finish
+2018-03-27 18:45:17 [mypjt.spiders.RUB] INFO: get from RUB exchange rate finish
+2018-03-27 18:45:17 [scrapy.core.engine] INFO: Closing spider (finished)
+[2018-03-27 18:45:17]-[mypjt.pipelines]-[pipelines.py]-[INFO]-[close_spider]-[238] : data save finish
+2018-03-27 18:45:17 [mypjt.pipelines] INFO: data save finish
+2018-03-27 18:45:17 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1741,
+ 'downloader/request_count': 5,
+ 'downloader/request_method_count/GET': 5,
+ 'downloader/response_bytes': 32591,
+ 'downloader/response_count': 5,
+ 'downloader/response_status_count/200': 5,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 27, 10, 45, 17, 411815),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 7,
+ 'log_count/INFO': 28,
+ 'log_count/WARNING': 13,
+ 'memusage/max': 61882368,
+ 'memusage/startup': 61882368,
+ 'request_depth_max': 4,
+ 'response_received_count': 5,
+ 'scheduler/dequeued': 5,
+ 'scheduler/dequeued/memory': 5,
+ 'scheduler/enqueued': 5,
+ 'scheduler/enqueued/memory': 5,
+ 'start_time': datetime.datetime(2018, 3, 27, 10, 45, 16, 214122)}
+2018-03-27 18:45:17 [scrapy.core.engine] INFO: Spider closed (finished)
