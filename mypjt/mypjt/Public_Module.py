@@ -2,6 +2,7 @@
 import os
 import sys
 #import logging
+from scrapy.selector import Selector
 import time,datetime
 import pymysql
 import logging
@@ -24,6 +25,25 @@ currency_translate_dict={'人民币':'CNY','阿联酋迪拉姆':'AED','澳大利
 }
 top_dict={'货币名称':'CurrencyName','现汇买入价':'BuyingRate','现钞买入价':'CashBuyingRate', \
 '现汇卖出价':'SellingRate','现汇卖出价':'CashSellingRate','中行折算价':'MiddleRate'}
+
+def getData_1(response,currency_name):
+    respp=response.xpath('//div[@style="text-align: left;padding-left:10px;"]').extract()
+    resppp=Selector(text=respp[0]).xpath('//b[@style="font-weight:bold;font-size:36px;font-family:Arial;"]/font[3]/text()').extract()
+    ex_rate=float(resppp[0])
+
+    list_str=respp[0].split('<br>')
+    pos_1=list_str[-1].find(u'：')
+    pos_2=list_str[-1].find(u'<')
+    str=list_str[-1][pos_1+1:pos_2]
+    str=str[:10]+' '+str[11:19]
+    return [currency_name,ex_rate,str]
+def getData_2(response,currency_name):
+    res=response.xpath('//table[@id="table1"]//tr').extract()#可以使用
+    for i in range(1,len(res)):
+        res2=Selector(text=res[i]).xpath('//td/text()').extract()
+        if  res2[0].split('/')[-1]==currency_name :   
+            res2=getGroupData(res2)
+            return res2 
 def getGroupData(List_item):
     temp_res=[]
     name=List_item[0].split('/')[-1]
@@ -64,10 +84,6 @@ def check_all_currency_tb(currency_name,currency_tb_name):
                 logger.error('create  table %s failure' % 'all_currency_tb')
             else:
                 try :
-                    sql="create table if not exists {0}(exchange_currency_name varchar(20) NOT NULL PRIMARY KEY ,child_tb_name varchar(20) NOT NULL)".format(currency_tb_name)
-                    effect_row=cursor.execute(sql)
-                    conn.commit()
-                    logger.info('table {0} exist'.format(currency_tb_name) )
                     effect_row=cursor.execute("select update_datetime from all_currency_tb where currency_name='{0}' ".format(currency_name))
                     if  effect_row<=0:
                         try :

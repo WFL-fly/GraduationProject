@@ -4,13 +4,13 @@ import scrapy
 
 import sys
 import logging
-from scrapy.selector import Selector
+
 from scrapy.http import Request
 from mypjt.items  import MypjtItem
 import time,datetime
 import pymysql
-from  mypjt.Public_Module import check_all_currency_tb,getGroupData
-
+from  mypjt.Public_Module import check_all_currency_tb,getGroupData,getData_1,getData_2
+from xml.sax.saxutils import unescape
 from  mypjt.logger import init_logger
 logger=init_logger(__name__)
 
@@ -34,13 +34,9 @@ class UsdSpider(scrapy.Spider):
         check_all_currency_tb(self.currency_name,self.currency_tb_name)
     def parse(self, response):
         logger.info('get from {0} to {1} exchange rate'.format(self.currency_name,self.exchange_currency_list[self.index] ))
-        res=response.xpath('//table[@id="table1"]//tr').extract()#可以使用
-        for i in range(1,len(res)):
-            res2=Selector(text=res[i]).xpath('//td/text()').extract()
-            if  res2[0].split('/')[-1]==self.exchange_currency_list[self.index] :   
-                res2=getGroupData(res2)
-                self.page_data.append(res2)   
-                break
+        #res=getData(response,self.exchange_currency_list[self.index])
+        res=getData_2(response,self.exchange_currency_list[self.index])
+        self.page_data.append(res)
         self.index+=1
         if  self.index<len(self.exchange_currency_list):
             new_url='http://www.zou114.com/agiotage/hl2.asp?from=USD&to={0}&q=1'.format(self.exchange_currency_list[self.index])

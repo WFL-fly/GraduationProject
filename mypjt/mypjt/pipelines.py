@@ -136,22 +136,20 @@ class MypjtPipeline(object):
                     logger.info('in {0} ,{1} and {2}  record exists'.format(cur_tb_name,ex_cur_name,childtb_name))
     def insert_data_pre(self,sql_list,childtb_name):
         try :
-            #print('sql_0 :'+sql_list[0])
             effect_row=self.cursor.execute(sql_list[0])
             self.conn.commit()
         except Exception as e:
             self.conn.rollback()
-            logger.info("error sql massage :"+sql_list[0])
+            #logger.info("error sql massage :"+sql_list[0])
             logger.error('create child table {0} failure,\n error massge: {1}'.format(childtb_name,traceback.format_exc()) )
             return False
         else:
             try :
-                #print('sql_1 :'+sql_list[1])
                 effect_row=self.cursor.execute(sql_list[1])
                 self.conn.commit()
             except Exception as e:
                 self.conn.rollback()
-                logger.info("error sql massage :"+sql_list[1])
+                #logger.info("error sql massage :"+sql_list[1])
                 logger.error('delete record failure,\n error massge: {1}'.format(childtb_name,traceback.format_exc()) )
                 return False
             else:
@@ -160,15 +158,25 @@ class MypjtPipeline(object):
                         #print('sql_2 :'+sql_list[2])
                         effect_row=self.cursor.execute(sql_list[2])
                         self.conn.commit()
+                        #logger.info("************************ insert data 1 *************")
                     except Exception as e:
                         self.conn.rollback()
-                        logger.info("error sql massage :"+sql_list[2])
+                        #logger.info("error sql massage :"+sql_list[2])
                         logger.error('insert record failure,\n error massge: {1}'.format(childtb_name,traceback.format_exc()) )
                         return False
                     else:
                         return True
                 else:
-                    return True
+                    try :
+                        effect_row=self.cursor.execute(sql_list[3])
+                        self.conn.commit()
+                        #logger.info("************************ update data 1 *************")
+                    except Exception as e:
+                        self.conn.rollback()
+                        logger.error('update currency_tb  record failure,\n error massge: {1}'.format(traceback.format_exc()) )
+                        return False
+                    else:
+                        return True
     def save_to_mysql(self,item):
         #更新时间
         if  self.conn==None:
@@ -178,13 +186,22 @@ class MypjtPipeline(object):
             self.cursor = self.conn.cursor(cursor=pymysql.cursors.DictCursor)
         self.update_datatime(item['new_update_date'],item['currency_name'])
         #保存数据
-        
+        cur_tb_name=item['currency_name']+'_tb'
+        sql="create table if not exists {0}(exchange_currency_name varchar(20) NOT NULL PRIMARY KEY , \
+            child_tb_name varchar(20) NOT NULL,NewestExRate float(24,6) ,NewestPubTime datetime )".format(cur_tb_name)
+        try :
+            effect_row=self.cursor.execute(sql)
+            self.conn.commit()
+        except Exception as e:
+            self.conn.rollback()
+            logger.error('increate  currency_tb  record failure,\n error massge: {1}'.format(traceback.format_exc()) )
+            return false
         size=len(item['data_list'][0])
         #print(size)
         for index in range(0,size):
-            ex_cur_name=item['data_list'][0][index][0]
+            newestPage=item['data_list'][0][index]
+            ex_cur_name=newestPage[0]
             childtb_name=item['currency_name']+'_'+ex_cur_name+'_tb'
-            cur_tb_name=item['currency_name']+'_tb'
 
             sql_list=[]
             sql='' 
@@ -199,19 +216,16 @@ class MypjtPipeline(object):
                  
             sql="select exchange_currency_name,child_tb_name from {0} where (exchange_currency_name='{1}' AND child_tb_name='{2}')".format(cur_tb_name,ex_cur_name,childtb_name)
             sql_list.append(sql)
-            sql="insert into {0}(exchange_currency_name,child_tb_name) VALUES('{1}','{2}')".format(cur_tb_name,ex_cur_name,childtb_name)
+            sql="insert into {0}(exchange_currency_name,child_tb_name,NewestExRate,NewestPubTime) VALUES('{1}','{2}',{3},'{4}')".format(cur_tb_name,ex_cur_name,childtb_name,newestPage[-2],newestPage[-1])
             sql_list.append(sql)
-
+            sql="update {0} set NewestExRate={1},NewestPubTime='{2}' where exchange_currency_name='{3}' \
+            ".format(cur_tb_name,newestPage[-2],newestPage[-1],ex_cur_name) 
+            sql_list.append(sql)
             insert_pre_res=self.insert_data_pre(sql_list,childtb_name)
             if  not insert_pre_res:
                 continue
-            #print(item['data_list'][::-1])
-
             for i in item['data_list'][::-1]:
-                #print(i)
-                #print(index)
                 line=i[index]
-                #print(line)
                 if  item['currency_name']=='CNY':
                     sql=" insert into {0}(BuyingRate,CashBuyingRate,SellingRate, \
                     CashSellingRate,MiddleRate,PubTime) VALUES({1},{2},{3},{4},{5},'{6}')".format(childtb_name,line[1],line[2],line[3],line[4],line[5],line[-1])
@@ -223,8 +237,8 @@ class MypjtPipeline(object):
                     self.conn.commit()
                 except Exception as e:
                     self.conn.rollback()
-                    logger.info("error sql massage :"+sql)
-                    logger.error('insert record failure,\n error massge: {1}'.format(childtb_name,traceback.format_exc()) )
+                    #logger.info("error sql massage :"+sql)
+                    logger.error('insert record to {0} failure,\n error massge: {1}'.format(childtb_name,traceback.format_exc()) )
         if  self.cursor!=None:
             self.cursor.close()
         if  self.conn!=None:

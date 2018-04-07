@@ -21,14 +21,18 @@ def getGroupData(List_item):
            res4=res3[0]#货币名称
         else :
            res4="0.00"
-        temp_res.append(float(res4))
+        temp_res.append(float(res4)/100.0)
     res3=Selector(text=List_item[-2]).xpath('//td/text()').extract()#date
     datetime=res3[0]+' '
     res3=Selector(text=List_item[-1]).xpath('//td/text()').extract()#time
     datetime +=res3[0]#datetime str
     temp_res.append(datetime)
     return temp_res
-
+def eleExist(list,ele):
+    for i in list:
+        if ele==i:
+            return True
+    return False
 class CnySpider(scrapy.Spider):
     name = 'CNY'
     allowed_domains = ['www.boc.cn']
@@ -36,6 +40,7 @@ class CnySpider(scrapy.Spider):
 
     def __init__(self):
         super(CnySpider,self).__init__()
+        self.timeList=[]
         self.datetime=None
         self.currentPageIndex=0
         self.allPagesNum=None
@@ -54,13 +59,13 @@ class CnySpider(scrapy.Spider):
             if len(res)>0 :
                 if  res[0].isdigit():
                     self.allPagesNum=int(res[0])
-                    logger.info("获取总页数成功"+res[0])
+                    logger.info("get total pages success:"+res[0])
                 else:
                     self.allPagesNum=0
-                    logger.error("提取数据文本错误")
+                    logger.error("get dada failure")
             else:
                 self.allPagesNum=0
-                logger.error("未获取到总页数")
+                logger.error("cannot get total Pages")
        
         #得到table
         res=response.xpath('//table[@align="left"]//tr').extract()#可以使用
@@ -87,13 +92,15 @@ class CnySpider(scrapy.Spider):
                 else:
                     logger.info("cannot get valid data")
                     return
-        if  page_datetime>self.item['new_update_date']:
-            self.item['new_update_date']=page_datetime
-        self.item['data_list'].append(page_data)
+        if not eleExist(self.timeList,page_data[0][-1]):
+            self.timeList.append(page_data[0][-1])
+            if  page_datetime>self.item['new_update_date']:
+                self.item['new_update_date']=page_datetime
+            self.item['data_list'].append(page_data)
         #print(datetimestr)
         
         #item['currentPageIndex']=self.currentPageIndex
-        logger.info(self.currentPageIndex)
+        #logger.info(self.currentPageIndex)
        
         #爬取后面的网页数据
         if  self.currentPageIndex<self.allPagesNum:
